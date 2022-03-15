@@ -8,3 +8,11 @@ function calculateTotal() {
     }
     return sum
   }
+  //PROTOTYPE:  Void getAllProducts ()
+//DESCRIPTION: Muestra por consola todos los productos.
+//AUTOR: Sandra Sarmiento
+function getAllProducts() {
+    products.forEach(product => {
+      console.table(product)
+    });
+  }
