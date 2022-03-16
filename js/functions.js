@@ -16,7 +16,7 @@ function getAllProducts() {
     console.table(product);
   });
 }
-// GenerateCart(): receives the cartList array
+// generateCart(): receives the cartList array
 function generateCart() {
   for (let i = 0; i < cart.length; i++) {
     console.log("Product: " + cart[i].name + "Price:" + cart[i].price);
