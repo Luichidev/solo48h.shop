@@ -16,11 +16,38 @@ function getAllProducts() {
     console.table(product);
   });
 }
-// generateCart(): receives the cartList array
-function generateCart() {
-  for (let i = 0; i < cart.length; i++) {
-    console.log("Product: " + cart[i].name + "Price:" + cart[i].price);
+// Cada producto del carrito conta con un campo cantidad. la función generateCart() recibe el array cartList, generando el array cart.
+//generateCart()
+//Vedrana Hasanbasic
+function containsElement(id) {
+  let cartContainsElement = false;
+  let index = -1;
+  for (var j = 0; j < cart.length; j++) {
+    if (cart[j].id === id) {
+      cartContainsElement = true;
+      index = j;
+      break;
+    }
   }
+  return { contains: cartContainsElement, index: index };
+}
+function generateCart() {
+  cart = [];
+  subtotal = [];
+  for (let i = 0; i < cart.length; i++) {
+    let cartContainsElement = containsElement(cartList[i].id);
+    if (cartContainsElement["contains"]) {
+      let quantity = cart[cartContainsElement["index"]].quantity;
+      cart[cartContainsElement["index"]].quantity = quantity + 1;
+      cart[cartContainsElement["index"]].subtotal += cartList[i].price;
+    } else {
+      let cartToAdd = JSON.parse(JSON.stringify(cartList[i]));
+      cartToAdd.quantity = 1;
+      cartToAdd.subtotal = cartList[i].price;
+      cart.push(cartToAdd);
+    }
+  }
+  return cart;
 }
 //PROTOTYPE:  Array removeCart ()
 //DESCRIPTION: Muestra por consola todos los productos.
@@ -42,21 +69,21 @@ function removeFromCart(id) {
 //DESCRIPTION: Ordena en forma descendente los productos dentro de cart.
 //AUTOR: Dorian Fanttini
 
-function orderByProduct(){
-  cart.sort(function(a,b){
-    if (a.titulo > b.titulo){ 
-    return 1;
-  } else {
-    return -1;
-  }
- } )
-  }
-    
+function orderByProduct() {
+  cart.sort(function (a, b) {
+    if (a.titulo > b.titulo) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+}
+
 //description: function buy()
 //Autor:Tania Guimerà
 
-const addproduct = products.find(element => element.id == id);
-    cartList.push(addproduct );
+const addproduct = products.find((element) => element.id == id);
+cartList.push(addproduct);
 
 //clear cart(): clear car list
 //autor: alma ortiz
@@ -70,23 +97,23 @@ function clearCart() {
 tipus = Object.keys(subtotal);
 function subtotal() {
   for (var i = 0; i < cartList.length; i++) {
-    tipus.forEach(element => {
-        if (cartList[i].type == element) {
-            total2 = subtotal[element].value + cartList[i].price;
-            subtotal[element].value = parseFloat(total2.toFixed(2));
-        }
+    tipus.forEach((element) => {
+      if (cartList[i].type == element) {
+        total2 = subtotal[element].value + cartList[i].price;
+        subtotal[element].value = parseFloat(total2.toFixed(2));
+      }
     });
   }
-  }    
+}
 //PROTOTYPE:  Array Products From Category ()
 //DESCRIPTION: Muestra los productos por categoria.
 //AUTOR: Sandra Sarmiento
 function getProductsFromCategory(categoria) {
-  let aux = []
-products.forEach(product => {
-  if (product.type === categoria) {
-    aux.push(product)    
-  } 
-});
-return aux
+  let aux = [];
+  products.forEach((product) => {
+    if (product.type === categoria) {
+      aux.push(product);
+    }
+  });
+  return aux;
 }
