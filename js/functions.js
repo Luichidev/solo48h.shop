@@ -78,3 +78,15 @@ function subtotal() {
     });
   }
   }    
+//PROTOTYPE:  Array Products From Category ()
+//DESCRIPTION: Muestra los productos por categoria.
+//AUTOR: Sandra Sarmiento
+function getProductsFromCategory(categoria) {
+  let aux = []
+products.forEach(product => {
+  if (product.type === categoria) {
+    aux.push(product)    
+  } 
+});
+return aux
+}
