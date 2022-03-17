@@ -22,3 +22,9 @@ function generateCart() {
     console.log("Product: " + cart[i].name + "Price:" + cart[i].price);
   }
 }
+
+//description: function buy()
+//Autor:Tania Guimerà
+
+const addproduct = products.find(element => element.id == id);
+    cartList.push(addproduct );
