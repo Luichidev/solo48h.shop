@@ -38,3 +38,17 @@ function removeFromCart(id) {
   }
   return cart;
 }
+//PROTOTYPE:  Void orderByProduct()
+//DESCRIPTION: Ordena en forma descendente los productos dentro de cart.
+//AUTOR: Dorian Fanttini
+
+function orderByProduct(){
+  cart.sort(function(a,b){
+    if (a.titulo > b.titulo){ 
+    return 1;
+  } else {
+    return -1;
+  }
+ } )
+  }
+    
