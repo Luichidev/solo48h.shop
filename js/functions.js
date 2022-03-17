@@ -22,3 +22,19 @@ function generateCart() {
     console.log("Product: " + cart[i].name + "Price:" + cart[i].price);
   }
 }
+//PROTOTYPE:  Array removeCart ()
+//DESCRIPTION: Muestra por consola todos los productos.
+//AUTOR: Sandra Sarmiento
+function removeFromCart(id) {
+  for (let i = 0; i < cart.length; i++) {
+    if (id === cart[i].id) {
+      if (cart[i].quantity > 1) {
+        cart[i].quantity--;
+      } else {
+        cart.splice(i, 1);
+      }
+      return cart;
+    }
+  }
+  return cart;
+}
