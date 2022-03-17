@@ -79,3 +79,9 @@ const Productos = [{
         categoria: "Alimentación"
     }
 ]
+//array for the shopping list:
+var cartList = [];
+var cart = []; 
+
+var subtotal = {};
+
