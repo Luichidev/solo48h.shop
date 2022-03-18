@@ -118,3 +118,16 @@ function getProductsFromCategory(categoria) {
   });
   return aux;
 }
+// Prototype: functiona ProductsByPopularity()
+//Description: mUestra los productos populares.
+//Autor:Tania Guimerà
+function ProductsByPopularity(populares){
+  let info=[];
+  products.forEach((product) => {
+    if (product.type===populares){
+      aux.push(product);
+    }
+  });
+
+  }
+}
