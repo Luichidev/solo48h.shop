@@ -125,9 +125,9 @@ function ProductsByPopularity(populares){
   let info=[];
   products.forEach((product) => {
     if (product.type===populares){
-      aux.push(product);
+      info.push(product);
     }
   });
-
+   return info;
   }
 
