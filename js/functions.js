@@ -68,7 +68,6 @@ function removeFromCart(id) {
 //PROTOTYPE:  Void orderByProduct()
 //DESCRIPTION: Ordena en forma descendente los productos dentro de cart.
 //AUTOR: Dorian Fanttini
-
 function orderByProduct() {
   cart.sort(function (a, b) {
     if (a.titulo > b.titulo) {
@@ -78,10 +77,8 @@ function orderByProduct() {
     }
   });
 }
-
 //description: function buy()
 //Autor:Tania Guimerà
-
 function buy(id) {
   const addproduct = products.find(element => element.id == id);
       cartList.push(addproduct );
@@ -118,7 +115,7 @@ function getProductsFromCategory(categoria) {
   });
   return aux;
 }
-// Prototype: functiona ProductsByPopularity()
+//Prototype: functiona ProductsByPopularity()
 //Description: mUestra los productos populares.
 //Autor:Tania Guimerà
 function ProductsByPopularity(populares){
@@ -130,4 +127,17 @@ function ProductsByPopularity(populares){
   });
 
   }
+}
 
+//PROTOTYPE: Void createSubTotal().
+//DESCRIPTION: rellena el array subtotal con las categorias que hay en los productos
+//Autor: Luis Arana
+function createSubTotal() {
+  const model = {
+    value : 0,
+    discount: 0
+  }
+  Productos.forEach((producto)=> {
+    subtotal[producto.categoria] = model
+  })
+}
