@@ -121,13 +121,7 @@ function getProductsFromCategory(categoria) {
 // Prototype: functiona ProductsByPopularity()
 //Description: mUestra los productos populares.
 //Autor:Tania Guimerà
-function ProductsByPopularity(populares){
-  let info=[];
-  products.forEach((product) => {
-    if (product.type===populares){
-      info.push(product);
-    }
-  });
-   return info;
-  }
+function ProductsByPopularity(){
+    Productos.sort((a,b) => a.popularity - b.popularity).reverse()
+}
 
