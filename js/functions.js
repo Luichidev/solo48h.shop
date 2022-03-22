@@ -82,7 +82,7 @@ function orderByProduct() {
 function buy(id) {
   const addproduct = products.find(element => element.id == id);
       cartList.push(addproduct );
-  }
+}
 //clear cart(): clear car list
 //autor: alma ortiz
 function clearCart() {
