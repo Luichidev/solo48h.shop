@@ -32,8 +32,9 @@ function clearCart() {
 
 //function subtotal() dynamic subtotal:
 //autor: alma ortiz
-tipus = Object.keys(subtotal);
+
 function subtotal() {
+  tipus = Object.keys(subtotal);
   for (var i = 0; i < cartList.length; i++) {
     tipus.forEach(element => {
         if (cartList[i].type == element) {
