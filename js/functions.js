@@ -93,15 +93,15 @@ function clearCart() {
 //function subtotal() dynamic subtotal:
 //autor: alma ortiz
 
-function subtotal() {
+function subTotal() {
   tipus = Object.keys(subtotal);
   for (var i = 0; i < cartList.length; i++) {
     tipus.forEach((element) => {
-      if (cartList[i].type == element) {
-        total2 = subtotal[element].value + cartList[i].price;
+      if (cartList[i].categoria == element) {
+        total2 = subtotal[element].value + cartList[i].precio;
         subtotal[element].value = parseFloat(total2.toFixed(2));
       }
-    });
+    })
   }
 }
 //PROTOTYPE:  Array Products From Category ()
