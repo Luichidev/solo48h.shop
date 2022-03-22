@@ -26,6 +26,6 @@ function generateCart() {
 //description: function buy()
 //Autor:Tania Guimerà
 function buy(id) {
-  const addproduct = products.find(element => element.id == id);
-      cartList.push(addproduct );
+  const addproduct = Productos.find(element => element.id == id);
+      cartList.push(addproduct);
   }
