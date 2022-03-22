@@ -135,3 +135,16 @@ function createSubTotal() {
     subtotal[producto.categoria] = model
   })
 }
+
+//PROTOTYPE:  Void orderByCategory()
+//DESCRIPTION: Ordenar los productos por categoria.
+//AUTOR: Dorian Fanttini
+function orderByCategory() {
+  productos.sort(function (a, b) {
+    if (a.categoria > b.categoria) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+}
