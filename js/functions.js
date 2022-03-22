@@ -80,6 +80,7 @@ function orderByProduct() {
 //description: function buy()
 //Autor:Tania Guimerà
 function buy(id) {
+<<<<<<< HEAD
   const addproduct = products.find(element => element.id == id);
       cartList.push(addproduct );
   }
@@ -135,3 +136,8 @@ function createSubTotal() {
     subtotal[producto.categoria] = model
   })
 }
+=======
+  const addproduct = Productos.find(element => element.id == id);
+      cartList.push(addproduct);
+  }
+>>>>>>> feature-add-function-buy
