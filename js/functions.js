@@ -28,4 +28,4 @@ function generateCart() {
 function buy(id) {
   const addproduct = Productos.find(element => element.id == id);
       cartList.push(addproduct);
-  }
+}
