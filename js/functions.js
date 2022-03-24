@@ -81,6 +81,7 @@ function orderByProduct() {
 //Autor:Tania Guimerà
 function buy(id) {
   const addproduct = Productos.find((element) => element.id == id)
+  addproduct.popularity++
   cartList.push(addproduct)
 }
 //clear cart(): clear car list
