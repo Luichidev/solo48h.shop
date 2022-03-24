@@ -86,9 +86,10 @@ function buy(id) {
 //clear cart(): clear car list
 //autor: alma ortiz
 function clearCart() {
-  carList.length = 0
+  cartList.length = 0
   cartList = []
 }
+
 
 //function subtotal() dynamic subtotal:
 //autor: alma ortiz
