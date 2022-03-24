@@ -34,7 +34,7 @@ function containsElement(id) {
 function generateCart() {
   cart = []
   subtotal = []
-  for (let i = 0; i < cart.length; i++) {
+  for (let i = 0; i < cartList.length; i++) {
     let cartContainsElement = containsElement(cartList[i].id)
     if (cartContainsElement['contains']) {
       let quantity = cart[cartContainsElement['index']].quantity
@@ -69,7 +69,7 @@ function removeFromCart(id) {
 //DESCRIPTION: Ordena en forma descendente los productos dentro de cart.
 //AUTOR: Dorian Fanttini
 function orderByProduct() {
-  cart.sort(function (a, b) {
+  Productos.sort(function (a, b) {
     if (a.titulo > b.titulo) {
       return 1
     } else {
@@ -146,7 +146,7 @@ function createSubTotal() {
 //DESCRIPTION: Ordenar los productos por categoria.
 //AUTOR: Dorian Fanttini
 function orderByCategory() {
-  productos.sort(function (a, b) {
+  Productos.sort(function (a, b) {
     if (a.categoria > b.categoria) {
       return 1
     } else {
