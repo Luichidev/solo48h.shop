@@ -81,14 +81,16 @@ function orderByProduct() {
 //Autor:Tania Guimerà
 function buy(id) {
   const addproduct = Productos.find((element) => element.id == id)
+  addproduct.popularity++
   cartList.push(addproduct)
 }
 //clear cart(): clear car list
 //autor: alma ortiz
 function clearCart() {
-  carList.length = 0
+  cartList.length = 0
   cartList = []
 }
+
 
 //function subtotal() dynamic subtotal:
 //autor: alma ortiz
