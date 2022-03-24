@@ -1,10 +1,10 @@
-createSubTotal()
-buy(9)
-buy(10)
-console.log(cartList);
+// createSubTotal()
+// buy(9)
+// buy(10)
+// console.log(cartList);
 
-subTotal()
-console.log(subtotal);
+// subTotal()
+// console.log(subtotal);
 
-clearCart()
-console.log(cartList);
+// clearCart()
+// console.log(cartList);

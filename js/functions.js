@@ -12,7 +12,7 @@ function calculateTotal() {
 //DESCRIPTION: Muestra por consola todos los productos.
 //AUTOR: Sandra Sarmiento
 function getAllProducts() {
-  products.forEach((product) => {
+  Productos.forEach((product) => {
     console.table(product)
   })
 }
@@ -50,7 +50,7 @@ function generateCart() {
   return cart
 }
 //PROTOTYPE:  Array removeCart ()
-//DESCRIPTION: Muestra por consola todos los productos.
+//DESCRIPTION: Esborra un a un els elements
 //AUTOR: Sandra Sarmiento
 function removeFromCart(id) {
   for (let i = 0; i < cart.length; i++) {
@@ -117,8 +117,8 @@ function subTotal() {
 //AUTOR: Sandra Sarmiento
 function getProductsFromCategory(categoria) {
   let aux = []
-  products.forEach((product) => {
-    if (product.type === categoria) {
+  Productos.forEach((product) => {
+    if (product.categoria === categoria) {
       aux.push(product)
     }
   })
