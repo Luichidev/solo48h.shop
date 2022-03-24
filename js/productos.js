@@ -69,7 +69,7 @@ const Productos = [
     descripcion:
       'PEGAMENTO RÁPIDO ideal para uniones resistentes en trabajos de bricolaje y reparación, ELIMINA el uso de clavos y tornillos -EXTRAFUERTE - Tecnología de POLÍMEROS a base de agua para adhesiones resistentes, SIN DISOLVENTES, sin pistola de cartuchos, blanco, 1 x 100 g tubo -Dimensiones del producto 12 x 3.9 x 21.5 cm; 121 gramos -',
     precio: 2.45,
-    categoria: 'Bricolage',
+    categoria: 'Bricolaje',
     popularity: 0
   },
   {
