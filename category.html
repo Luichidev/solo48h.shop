@@ -1,238 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Solo48h - Categorías</title>
-    <link rel="icon" href="img/Fevicon.png" type="image/png" />
-    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css" />
-    <link rel="stylesheet" href="vendors/linericon/style.css" />
-    <link
-      rel="stylesheet"
-      href="vendors/owl-carousel/owl.theme.default.min.css"
-    />
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="vendors/nice-select/nice-select.css" />
-    <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <!--================ Start Header Menu Area =================-->
-    <header class="header_area">
-      <div class="main_menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container">
-            <a class="navbar-brand logo_h" href="index.html"
-              ><img src="img/logo.png" alt=""
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse offset"
-              id="navbarSupportedContent"
-            >
-              <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item active submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Tienda</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="category.html">Categorías</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="single-product.html"
-                        >Producto</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="checkout.html">Comprar</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="confirmation.html"
-                        >Confirmar pedido</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="cart.html">Mi Carrito</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Blog</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="single-blog.html">Contenido</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Mi cuenta</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="register.html">Regístrate</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="tracking-order.html"
-                        >Tracking</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contáctanos</a>
-                </li>
-              </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Solo48h - Categorías</title>
+  <link rel="icon" href="img/Fevicon.png" type="image/png" />
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="vendors/linericon/style.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/nice-select/nice-select.css" />
+  <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-              <ul class="nav-shop">
-                <li class="nav-item">
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li class="nav-item">
-                  <button>
-                    <i class="ti-shopping-cart"></i
-                    ><span class="nav-shop__circle">3</span>
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <a class="button button-header" href="#">Comprar</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!--================ End Header Menu Area =================-->
+<body>
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item active submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Tienda</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">Categorías</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="single-product.html">Producto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="checkout.html">Comprar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="confirmation.html">Confirmar pedido</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Mi Carrito</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Blog</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="single-blog.html">Contenido</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Mi cuenta</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="register.html">Regístrate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tracking-order.html">Tracking</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contáctanos</a>
+              </li>
+            </ul>
 
-    <!-- ================ start banner area ================= -->
-    <section class="blog-banner-area" id="category">
-      <div class="container h-100">
-        <div class="blog-banner">
-          <div class="text-center">
-            <h1>Categorías</h1>
-            <nav aria-label="breadcrumb" class="banner-breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Categorías
-                </li>
-              </ol>
-            </nav>
+            <ul class="nav-shop">
+              <li class="nav-item">
+                <button><i class="ti-search"></i></button>
+              </li>
+              <li class="nav-item">
+                <button>
+                  <i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="button button-header" href="#">Comprar</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- ================ end banner area ================= -->
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
 
-    <!-- ================ category section start ================= -->
-    <section class="section-margin--small mb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-3 col-lg-4 col-md-5">
-            <div class="sidebar-categories">
-              <div class="head">Ver Categorías</div>
-              <ul class="main-categories">
-                <li class="common-filter">
-                  <form action="#">
-                    <ul>
-                      <li class="filter-list">
-                        <input
-                          class="pixel-radio"
-                          type="radio"
-                          id="men"
-                          name="brand"
-                        /><label for="men"
-                          >Alimentación<span> (3789)</span></label
-                        >
-                      </li>
-                      <li class="filter-list">
-                        <input
-                          class="pixel-radio"
-                          type="radio"
-                          id="women"
-                          name="brand"
-                        /><label for="women"
-                          >Belleza y salud<span> (4069)</span></label
-                        >
-                      </li>
-                      <li class="filter-list">
-                        <input
-                          class="pixel-radio"
-                          type="radio"
-                          id="accessories"
-                          name="brand"
-                        />Deportes<label for="accessories"
-                          ><span> (2909)</span></label
-                        >
-                      </li>
-                      <li class="filter-list">
-                        <input
-                          class="pixel-radio"
-                          type="radio"
-                          id="footwear"
-                          name="brand"
-                        /><label for="footwear"
-                          >Hogar<span> (5290)</span></label
-                        >
-                      </li>
-                      <li class="filter-list">
-                        <input
-                          class="pixel-radio"
-                          type="radio"
-                          id="bayItem"
-                          name="brand"
-                        /><label for="bayItem"
-                          >Bricolage<span> (1463)</span></label
-                        >
-                      </li>
-                      <!-- <li class="filter-list">
+  <!-- ================ start banner area ================= -->
+  <section class="blog-banner-area" id="category">
+    <div class="container h-100">
+      <div class="blog-banner">
+        <div class="text-center">
+          <h1>Categorías</h1>
+          <nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Categorías
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ end banner area ================= -->
+
+  <!-- ================ category section start ================= -->
+  <section class="section-margin--small mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+          <div class="sidebar-categories">
+            <div class="head">Ver Categorías</div>
+            <ul class="main-categories">
+              <li class="common-filter">
+                <form action="#">
+                  <ul>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="men" name="brand" /><label
+                        for="men">Alimentación<span> (3789)</span></label>
+                    </li>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label for="women">Belleza y
+                        salud<span> (4069)</span></label>
+                    </li>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="accessories" name="brand" />Deportes<label
+                        for="accessories"><span> (2909)</span></label>
+                    </li>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="footwear" name="brand" /><label
+                        for="footwear">Hogar<span> (5290)</span></label>
+                    </li>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
+                        for="bayItem">Bricolage<span> (1463)</span></label>
+                    </li>
+                    <!-- <li class="filter-list">
                       <input class="pixel-radio" type="radio" id="electronics" name="brand" /><label
                         for="electronics">Electronics<span> (3600)</span></label>
                     </li>
@@ -240,482 +168,402 @@
                       <input class="pixel-radio" type="radio" id="food" name="brand" /><label for="food">Food<span>
                           (3600)</span></label>
                     </li> -->
-                    </ul>
-                  </form>
-                </li>
-              </ul>
-            </div>
-            <div class="sidebar-filter">
-              <div class="top-filter-head">Filtrado de productos</div>
-              <div class="common-filter">
-                <div class="head">Marcas</div>
-                <form action="#">
-                  <ul>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="apple"
-                        name="brand"
-                      /><label for="apple">Apple<span>(29)</span></label>
-                    </li>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="asus"
-                        name="brand"
-                      /><label for="asus">Asus<span>(29)</span></label>
-                    </li>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="gionee"
-                        name="brand"
-                      /><label for="gionee">HP<span>(19)</span></label>
-                    </li>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="micromax"
-                        name="brand"
-                      /><label for="micromax">Samsung<span>(19)</span></label>
-                    </li>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="samsung"
-                        name="brand"
-                      /><label for="samsung">LG<span>(19)</span></label>
-                    </li>
                   </ul>
                 </form>
-              </div>
-              <div class="common-filter">
-                <div class="head">Color</div>
-                <form action="#">
-                  <ul>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="black"
-                        name="color"
-                      /><label for="black">Negro<span>(126)</span></label>
-                    </li>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="balckleather"
-                        name="color"
-                      /><label for="balckleather">Rojo<span>(29)</span></label>
-                    </li>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="blackred"
-                        name="color"
-                      /><label for="blackred">Blanco<span>(82)</span></label>
-                    </li>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="gold"
-                        name="color"
-                      /><label for="gold">Gold<span>(35)</span></label>
-                    </li>
-                    <li class="filter-list">
-                      <input
-                        class="pixel-radio"
-                        type="radio"
-                        id="spacegrey"
-                        name="color"
-                      /><label for="spacegrey">Verde<span>(56)</span></label>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-              <div class="common-filter">
-                <div class="head">Precio</div>
-                <div class="price-range-area">
-                  <div id="price-range"></div>
-                  <div class="value-wrapper d-flex">
-                    <div class="price">desde:</div>
-                    <span>$</span>
-                    <div id="lower-value"></div>
-                    <div class="to">hasta</div>
-                    <span>$</span>
-                    <div id="upper-value"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-9 col-lg-8 col-md-7">
-            <!-- Start Filter Bar -->
-            <div class="filter-bar d-flex flex-wrap align-items-center">
-              <div class="sorting">
-                <select>
-                  <option value="1">Relevancia</option>
-                  <option value="1">Precio ascendente</option>
-                  <option value="1">Precio descendente</option>
-                </select>
-              </div>
-              <div class="sorting mr-auto">
-                <select>
-                  <option value="1">Muestra 10 productos</option>
-                  <option value="1">Muestra 20 productos</option>
-                  <option value="1">Muestra 50 productos</option>
-                </select>
-              </div>
-              <div>
-                <div class="input-group filter-bar-search">
-                  <input type="text" placeholder="Search" />
-                  <div class="input-group-append">
-                    <button type="button"><i class="ti-search"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Filter Bar -->
-            <!-- Start Best Seller -->
-            <section class="lattest-product-area pb-40 category-list">
-              <div class="row" id="cards">
-               
-              </div>
-            </section>
-            <!-- End Best Seller -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================ category section end ================= -->
-
-    <!-- ================ top product area start ================= -->
-    <section class="related-product-area">
-      <div class="container">
-        <div class="section-intro pb-60px">
-          <p>Artículo popular en el mercado</p>
-          <h2>Productos<span class="section-intro__style"> Top</span></h2>
-        </div>
-        <div class="row mt-30">
-          <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
-            <div class="single-search-product-wrapper">
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-1.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Gafas Sport</a>
-                  <div class="price">9,95€</div>
-                </div>
-              </div>
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-2.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Set Maquillaje</a>
-                  <div class="price">12,15€</div>
-                </div>
-              </div>
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-3.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Pegamento extrafuerte</a>
-                  <div class="price">2,45€</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
-            <div class="single-search-product-wrapper">
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-4.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Cable HDMI</a>
-                  <div class="price">2,99€</div>
-                </div>
-              </div>
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-5.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Smartwatch</a>
-                  <div class="price">16,99€</div>
-                </div>
-              </div>
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-6.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Pendrive 64GB</a>
-                  <div class="price">5,95€</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
-            <div class="single-search-product-wrapper">
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-7.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Rasuradora Lite</a>
-                  <div class="price">18,95€</div>
-                </div>
-              </div>
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-8.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Colonia After Shave</a>
-                  <div class="price">4,15€</div>
-                </div>
-              </div>
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-9.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Gel higienizante</a>
-                  <div class="price">2,18€</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
-            <div class="single-search-product-wrapper">
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-10.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Galletas Nocilla</a>
-                  <div class="price">2,99€</div>
-                </div>
-              </div>
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-11.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Spray Cleaner</a>
-                  <div class="price">0,99€</div>
-                </div>
-              </div>
-              <div class="single-search-product d-flex">
-                <a href="#"
-                  ><img src="img/product/product-sm-12.jpg" alt=""
-                /></a>
-                <div class="desc">
-                  <a href="#" class="title">Set cuchillos</a>
-                  <div class="price">4,95€</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================ top product area end ================= -->
-
-    <!-- ================ Subscribe section start ================= -->
-    <section class="subscribe-position">
-      <div class="container">
-        <div class="subscribe text-center">
-          <h3 class="subscribe__title">
-            Obtenga actualizaciones desde cualquier lugar
-          </h3>
-          <p>Sólo te tomará un minuto agregarte a nuestra Newsletter.</p>
-          <div id="mc_embed_signup">
-            <form
-              target="_blank"
-              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-              method="get"
-              class="subscribe-form form-inline mt-5 pt-1"
-            >
-              <div class="form-group ml-sm-auto">
-                <input
-                  class="form-control mb-1"
-                  type="email"
-                  name="EMAIL"
-                  placeholder="Escribe tu correo"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Your Email Address '"
-                />
-                <div class="info"></div>
-              </div>
-              <button
-                class="button button-subscribe mr-auto mb-1"
-                type="submit"
-              >
-                Suscribete
-              </button>
-              <div style="position: absolute; left: -5000px">
-                <input
-                  name="b_36c4fd991d266f23781ded980_aefe40901a"
-                  tabindex="-1"
-                  value=""
-                  type="text"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================ Subscribe section end ================= -->
-
-    <!--================ Start footer Area  =================-->
-    <footer>
-      <div class="footer-area">
-        <div class="container">
-          <div class="row section_gap">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="single-footer-widget tp_widgets">
-                <h4 class="footer_title large_title">Nuestra Misión</h4>
-                <p>
-                  Los mejores productos a los mejores precios, es nuestro lema y
-                  todo en solo 48 horas!
-                </p>
-                <p>Obten las mejores ofertas siempre</p>
-              </div>
-            </div>
-            <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
-              <div class="single-footer-widget tp_widgets">
-                <h4 class="footer_title">Links Rapidos</h4>
-                <ul class="list">
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#">Tienda</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Producto</a></li>
-                  <li><a href="#">Marca</a></li>
-                  <li><a href="#">Contacto</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-              <div class="single-footer-widget instafeed">
-                <h4 class="footer_title">Galeria</h4>
-                <ul class="list instafeed d-flex flex-wrap">
-                  <li><img src="img/gallery/r1.jpg" alt="" /></li>
-                  <li><img src="img/gallery/r2.jpg" alt="" /></li>
-                  <li><img src="img/gallery/r3.jpg" alt="" /></li>
-                  <li><img src="img/gallery/r5.jpg" alt="" /></li>
-                  <li><img src="img/gallery/r4.jpg" alt="" /></li>
-                  <li><img src="img/gallery/r6.jpg" alt="" /></li>
-                </ul>
-              </div>
-            </div>
-            <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
-              <div class="single-footer-widget tp_widgets">
-                <h4 class="footer_title">Contáctanos</h4>
-                <div class="ml-40">
-                  <p class="sm-head">
-                    <span class="fa fa-location-arrow"></span>
-                    Oficina
-                  </p>
-                  <p>C/ del Perú, 52, 08018 Barcelona</p>
-
-                  <p class="sm-head">
-                    <span class="fa fa-phone"></span>
-                    Teléfono
-                  </p>
-                  <p>
-                    +123 456 7890 <br />
-                    +123 456 7890
-                  </p>
-
-                  <p class="sm-head">
-                    <span class="fa fa-envelope"></span>
-                    Email
-                  </p>
-                  <p>
-                    free@solo48h.com <br />
-                    www.solo48h.shop.com
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row d-flex">
-            <p class="col-lg-12 footer-text text-center">
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              All rights reserved | This template is made with
-              <i class="fa fa-heart" aria-hidden="true"></i> by
-              <a href="https://colorlib.com" target="_blank">Colorlib</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--================ End footer Area  =================-->
-    <template id="template-card">
-      <div class="col-md-6 col-lg-4">
-        <div class="card text-center card-product">
-          <div class="card-product__img">
-            <img class="card-img" src="img/product/product1.jpg" alt="" />
-            <ul class="card-product__imgOverlay">
-              <li>
-                <button><i class="ti-search"></i></button>
-              </li>
-              <li>
-                <button><i class="ti-shopping-cart"></i></button>
-              </li>
-              <li>
-                <button><i class="ti-heart"></i></button>
               </li>
             </ul>
           </div>
-          <div class="card-body">
-            <p>Accesorio Deporte</p>
-            <h4 class="card-product__title">
-              <a href="#">Smartwatch</a>
-            </h4>
-            <p class="card-product__price">16,99€</p>
+          <div class="sidebar-filter">
+            <div class="top-filter-head">Filtrado de productos</div>
+            <div class="common-filter">
+              <div class="head">Marcas</div>
+              <form action="#">
+                <ul>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="apple" name="brand" /><label
+                      for="apple">Apple<span>(29)</span></label>
+                  </li>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="asus" name="brand" /><label
+                      for="asus">Asus<span>(29)</span></label>
+                  </li>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="gionee" name="brand" /><label
+                      for="gionee">HP<span>(19)</span></label>
+                  </li>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="micromax" name="brand" /><label
+                      for="micromax">Samsung<span>(19)</span></label>
+                  </li>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="samsung" name="brand" /><label
+                      for="samsung">LG<span>(19)</span></label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="common-filter">
+              <div class="head">Color</div>
+              <form action="#">
+                <ul>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="black" name="color" /><label
+                      for="black">Negro<span>(126)</span></label>
+                  </li>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="balckleather" name="color" /><label
+                      for="balckleather">Rojo<span>(29)</span></label>
+                  </li>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="blackred" name="color" /><label
+                      for="blackred">Blanco<span>(82)</span></label>
+                  </li>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="gold" name="color" /><label
+                      for="gold">Gold<span>(35)</span></label>
+                  </li>
+                  <li class="filter-list">
+                    <input class="pixel-radio" type="radio" id="spacegrey" name="color" /><label
+                      for="spacegrey">Verde<span>(56)</span></label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="common-filter">
+              <div class="head">Precio</div>
+              <div class="price-range-area">
+                <div id="price-range"></div>
+                <div class="value-wrapper d-flex">
+                  <div class="price">desde:</div>
+                  <span>$</span>
+                  <div id="lower-value"></div>
+                  <div class="to">hasta</div>
+                  <span>$</span>
+                  <div id="upper-value"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-md-7">
+          <!-- Start Filter Bar -->
+          <div class="filter-bar d-flex flex-wrap align-items-center">
+            <div class="sorting">
+              <select>
+                <option value="1">Relevancia</option>
+                <option value="1">Precio ascendente</option>
+                <option value="1">Precio descendente</option>
+              </select>
+            </div>
+            <div class="sorting mr-auto">
+              <select>
+                <option value="1">Muestra 10 productos</option>
+                <option value="1">Muestra 20 productos</option>
+                <option value="1">Muestra 50 productos</option>
+              </select>
+            </div>
+            <div>
+              <div class="input-group filter-bar-search">
+                <input type="text" placeholder="Search" />
+                <div class="input-group-append">
+                  <button type="button"><i class="ti-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Filter Bar -->
+          <!-- Start Best Seller -->
+          <section class="lattest-product-area pb-40 category-list">
+            <div class="row" id="cards">
+
+            </div>
+          </section>
+          <!-- End Best Seller -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ category section end ================= -->
+
+  <!-- ================ top product area start ================= -->
+  <section class="related-product-area">
+    <div class="container">
+      <div class="section-intro pb-60px">
+        <p>Artículo popular en el mercado</p>
+        <h2>Productos<span class="section-intro__style"> Top</span></h2>
+      </div>
+      <div class="row mt-30">
+        <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+          <div class="single-search-product-wrapper">
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-1.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Gafas Sport</a>
+                <div class="price">9,95€</div>
+              </div>
+            </div>
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-2.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Set Maquillaje</a>
+                <div class="price">12,15€</div>
+              </div>
+            </div>
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-3.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Pegamento extrafuerte</a>
+                <div class="price">2,45€</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+          <div class="single-search-product-wrapper">
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-4.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Cable HDMI</a>
+                <div class="price">2,99€</div>
+              </div>
+            </div>
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-5.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Smartwatch</a>
+                <div class="price">16,99€</div>
+              </div>
+            </div>
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-6.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Pendrive 64GB</a>
+                <div class="price">5,95€</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+          <div class="single-search-product-wrapper">
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-7.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Rasuradora Lite</a>
+                <div class="price">18,95€</div>
+              </div>
+            </div>
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-8.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Colonia After Shave</a>
+                <div class="price">4,15€</div>
+              </div>
+            </div>
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-9.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Gel higienizante</a>
+                <div class="price">2,18€</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+          <div class="single-search-product-wrapper">
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-10.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Galletas Nocilla</a>
+                <div class="price">2,99€</div>
+              </div>
+            </div>
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-11.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Spray Cleaner</a>
+                <div class="price">0,99€</div>
+              </div>
+            </div>
+            <div class="single-search-product d-flex">
+              <a href="#"><img src="img/product/product-sm-12.jpg" alt="" /></a>
+              <div class="desc">
+                <a href="#" class="title">Set cuchillos</a>
+                <div class="price">4,95€</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </template>
-    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="vendors/skrollr.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
-    <script src="vendors/nouislider/nouislider.min.js"></script>
-    <script src="vendors/jquery.ajaxchimp.min.js"></script>
-    <script src="vendors/mail-script.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/productos.js"></script>
-    <script src="js/controlador.js"></script>
-  </body>
+    </div>
+  </section>
+  <!-- ================ top product area end ================= -->
+
+  <!-- ================ Subscribe section start ================= -->
+  <section class="subscribe-position">
+    <div class="container">
+      <div class="subscribe text-center">
+        <h3 class="subscribe__title">
+          Obtenga actualizaciones desde cualquier lugar
+        </h3>
+        <p>Sólo te tomará un minuto agregarte a nuestra Newsletter.</p>
+        <div id="mc_embed_signup">
+          <form target="_blank"
+            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+            method="get" class="subscribe-form form-inline mt-5 pt-1">
+            <div class="form-group ml-sm-auto">
+              <input class="form-control mb-1" type="email" name="EMAIL" placeholder="Escribe tu correo"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" />
+              <div class="info"></div>
+            </div>
+            <button class="button button-subscribe mr-auto mb-1" type="submit">
+              Suscribete
+            </button>
+            <div style="position: absolute; left: -5000px">
+              <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ Subscribe section end ================= -->
+
+  <!--================ Start footer Area  =================-->
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row section_gap">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget tp_widgets">
+              <h4 class="footer_title large_title">Nuestra Misión</h4>
+              <p>
+                Los mejores productos a los mejores precios, es nuestro lema y
+                todo en solo 48 horas!
+              </p>
+              <p>Obten las mejores ofertas siempre</p>
+            </div>
+          </div>
+          <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+            <div class="single-footer-widget tp_widgets">
+              <h4 class="footer_title">Links Rapidos</h4>
+              <ul class="list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Producto</a></li>
+                <li><a href="#">Marca</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="single-footer-widget instafeed">
+              <h4 class="footer_title">Galeria</h4>
+              <ul class="list instafeed d-flex flex-wrap">
+                <li><img src="img/gallery/r1.jpg" alt="" /></li>
+                <li><img src="img/gallery/r2.jpg" alt="" /></li>
+                <li><img src="img/gallery/r3.jpg" alt="" /></li>
+                <li><img src="img/gallery/r5.jpg" alt="" /></li>
+                <li><img src="img/gallery/r4.jpg" alt="" /></li>
+                <li><img src="img/gallery/r6.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget tp_widgets">
+              <h4 class="footer_title">Contáctanos</h4>
+              <div class="ml-40">
+                <p class="sm-head">
+                  <span class="fa fa-location-arrow"></span>
+                  Oficina
+                </p>
+                <p>C/ del Perú, 52, 08018 Barcelona</p>
+
+                <p class="sm-head">
+                  <span class="fa fa-phone"></span>
+                  Teléfono
+                </p>
+                <p>
+                  +123 456 7890 <br />
+                  +123 456 7890
+                </p>
+
+                <p class="sm-head">
+                  <span class="fa fa-envelope"></span>
+                  Email
+                </p>
+                <p>
+                  free@solo48h.com <br />
+                  www.solo48h.shop.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row d-flex">
+          <p class="col-lg-12 footer-text text-center">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with
+            <i class="fa fa-heart" aria-hidden="true"></i> by
+            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--================ End footer Area  =================-->
+  <template id="template-card">
+    <div class="col-md-6 col-lg-4">
+      <div class="card text-center card-product">
+        <div class="card-product__img">
+          <img class="card-img" src="img/product/product1.jpg" alt="" />
+          <ul class="card-product__imgOverlay">
+            <li>
+              <button><i class="ti-search"></i></button>
+            </li>
+            <li>
+              <button><i class="ti-shopping-cart"></i></button>
+            </li>
+            <li>
+              <button><i class="ti-heart"></i></button>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <p>Accesorio Deporte</p>
+          <h4 class="card-product__title">
+            <a href="#">Smartwatch</a>
+          </h4>
+          <p class="card-product__price">16,99</p>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendors/skrollr.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+  <script src="vendors/nouislider/nouislider.min.js"></script>
+  <script src="vendors/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/mail-script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/controlador.js"></script>
+</body>
+
 </html>
