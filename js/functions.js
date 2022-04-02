@@ -6,7 +6,7 @@ function calculateTotal() {
   for (const key in subtotal) {
     sum += subtotal[key].value
   }
-  return sum
+  return sum.toFixed(2)
 }
 //PROTOTYPE:  Void getAllProducts ()
 //DESCRIPTION: Muestra por consola todos los productos.
@@ -164,21 +164,21 @@ function addToCart(id) {
   addproduct.popularity++
   cartList.push(addproduct)
 
-  if (cartList.length > 1) {
-    for (let i = 0; i < cartList.length; i++) {
-      let cartContainsElement = containsElement(cartList[i].id)
-      if (cartContainsElement['contains']) {
-        let quantity = cart[cartContainsElement['index']].quantity
-        cart[cartContainsElement['index']].quantity = quantity + 1
-        cart[cartContainsElement['index']].subtotal += cartList[i].price
-      } else {
-        let cartToAdd = JSON.parse(JSON.stringify(cartList[i]))
-        cartToAdd.quantity = 1
-        cartToAdd.subtotal = cartList[i].price
-        cart.push(cartToAdd)
-      }
-    }
+  const objIndex = cart.findIndex((obj) => obj.id == id)
+  if (objIndex == -1) {
+    cart.push({
+      ...addproduct,
+      quantity: 1,
+      subtotal: addproduct.precio,
+    })
+  } else {
+    cart[objIndex].quantity++
+    let result = +cart[objIndex].subtotal + +addproduct.precio
+    cart[objIndex].subtotal = +result.toFixed(2)
   }
+
+  subTotal()
+  calculateTotal()
 }
 
 // PROTOTYPE: Array sumTokeys(Array array, String key).
@@ -186,8 +186,10 @@ function addToCart(id) {
 //Autor: Luis Arana
 function sumTokeys(array, key) {
   let total = 0
-  for (let i = 0; i < array.length; i++) {
-    total += array[i][key]
+  if (Array.isArray(array)) {
+    array.forEach((element) => {
+      total += element[key]
+    })
   }
   return total
 }
