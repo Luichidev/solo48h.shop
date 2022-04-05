@@ -1,15 +1,4 @@
 //Aqui va el código que enlazará las funciones con el DOM
-/**
- * @Variables Globales
- */
-
-let count = 0
-const cartIcon = document.querySelector(
-  '.nav-item > button > .ti-shopping-cart'
-)
-const cartIconNumber = document.querySelector('.nav-shop__circle')
-const cardIcons = document.querySelector('#cards')
-
 window.addEventListener('DOMContentLoaded', () => {
   printProductsInCategories()
   createSubTotal()
@@ -41,29 +30,3 @@ function printProductsInCategories() {
   })
   cards.appendChild(fragment)
 }
-
-//Click en el icono de carrito
-cartIconNumber.innerHTML = count
-cartIcon.addEventListener('click', () => {
-  window.location.href = 'http://127.0.0.1:5501/cart.html'
-})
-
-//Click en el icono de carrito de cada producto
-cards.addEventListener('click', (e) => {
-  const id = e.target.dataset.id
-  if (
-    e.target.classList.contains('ti-shopping-cart') ||
-    e.target.classList.contains('add')
-  ) {
-    addToCart(id)
-    count = updateNotify()
-  } else if (
-    e.target.classList.contains('ti-trash') ||
-    e.target.classList.contains('remove')
-  ) {
-    removeFromCart(id)
-    count = updateNotify()
-  }
-  cartIconNumber.innerHTML = count
-  e.stopPropagation()
-})

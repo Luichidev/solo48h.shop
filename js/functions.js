@@ -200,3 +200,18 @@ function sumTokeys(array, key) {
 function updateNotify() {
   return sumTokeys(cart, 'quantity')
 }
+
+// PROTOTYPE: Void setLocalCart().
+// DESCRIPTION: Guarda nuestro carrito en localStorage
+//Autor: Luis Arana
+function setLocalCart(key, value) {
+  localStorage.setItem(key, JSON.stringify(value))
+}
+
+//PROOTOTYPE: Void getLocalCart().
+//DESCRIPTION: Recupera nuestro carrito de localStorage
+//Autor: Luis Arana
+function getLocalCart(key) {
+  let res = JSON.parse(localStorage.getItem(key))
+  return res ? res : []
+}
