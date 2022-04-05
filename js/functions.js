@@ -54,8 +54,8 @@ function generateCart() {
 //AUTOR: Sandra Sarmiento
 function removeFromCart(id) {
   for (let i = 0; i < cart.length; i++) {
-    if (id === cart[i].id) {
-      if (cart[i].quantity > 1) {
+    if (cart.indexOf[i].id === id) {
+      if (cart[i].id.quantity > 1) {
         cart[i].quantity--
       } else {
         cart.splice(i, 1)
