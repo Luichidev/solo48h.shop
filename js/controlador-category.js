@@ -1,6 +1,6 @@
 //Aqui va el código que enlazará las funciones con el DOM
 /**
- * @Variables Glovales
+ * @Variables Globales
  */
 
 let count = 0

@@ -39,7 +39,7 @@ const Productos = [
       ' Textura: loción -Información extendida:Hidrata y alivia la piel después del afeitado -Tipo de piel: Todo tipo - Volumen del producto:330 Mililitros - Peso del producto	0.13 Kilogramos',
     precio: 4.15,
     categoria: 'Salud y Belleza',
-    popularity: 0,
+    popularity: 1,
   },
   {
     id: 5,
