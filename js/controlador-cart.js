@@ -11,7 +11,7 @@ function printProductsInCart() {
   const fragment = document.createDocumentFragment()
   const fragmentTfooter = document.createDocumentFragment()
   let total = 0
-  console.log(cart)
+
   cart.forEach((producto) => {
     templateTbody.querySelector('.media img').setAttribute('src', producto.url)
     templateTbody
@@ -28,7 +28,7 @@ function printProductsInCart() {
   })
 
   tbody.appendChild(fragment)
-  templateTfooter.querySelector('#total').textContent = total + '€'
+  templateTfooter.querySelector('#total').textContent = total.toFixed(2) + '€'
   const clone = templateTfooter.cloneNode(true)
   fragmentTfooter.appendChild(clone)
   tbody.appendChild(fragmentTfooter)
