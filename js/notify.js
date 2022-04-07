@@ -14,7 +14,7 @@ cartIcon.addEventListener('click', () => {
 
 try {
   //Click en el icono de carrito de cada producto
-  cart = getLocalCart('data-cart')
+  cart = getLocal('data-cart')
   count = updateNotify()
   cartIconNumber.innerHTML = count
   cards.addEventListener('click', (e) => {
@@ -32,7 +32,7 @@ try {
       removeFromCart(id)
       count = updateNotify()
     }
-    setLocalCart('data-cart', cart)
+    setLocal('data-cart', cart)
     cartIconNumber.innerHTML = count
     e.stopPropagation()
   })
