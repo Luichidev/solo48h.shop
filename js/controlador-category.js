@@ -2,6 +2,17 @@
 window.addEventListener('DOMContentLoaded', () => {
   printProductsInCategories()
   createSubTotal()
+  const allLinkProducts = document.querySelectorAll('.card-product__title a')
+
+  allLinkProducts.forEach((ele) => {
+    ele.addEventListener('click', (e) => {
+      e.preventDefault()
+      let id = e.target.getAttribute('data-id')
+      printProductInSingleproduct(id)
+      let url = new URL(window.location.href)
+      window.location.href = `${url.origin}/single-product.html`
+    })
+  })
 })
 
 // Pintar los productos en la pagina de categorias
@@ -14,6 +25,9 @@ function printProductsInCategories() {
     templateCard.querySelector('.card-img').setAttribute('src', producto.url)
     templateCard.querySelector('.ti-trash').setAttribute('data-id', producto.id)
     templateCard.querySelector('.remove').setAttribute('data-id', producto.id)
+    templateCard
+      .querySelector('.card-product__title a')
+      .setAttribute('data-id', producto.id)
     templateCard
       .querySelector('.ti-shopping-cart')
       .setAttribute('data-id', producto.id)

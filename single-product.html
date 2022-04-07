@@ -39,7 +39,6 @@
                   aria-expanded="false">Tienda</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item"><a class="nav-link" href="category.html">Categorías</a></li>
-                  <li class="nav-item"><a class="nav-link" href="single-product.html">Producto</a></li>
                   <li class="nav-item"><a class="nav-link" href="checkout.html">Comprar</a></li>
                   <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmar</a></li>
                   <li class="nav-item"><a class="nav-link" href="cart.html">Mi Carrito</a></li>
@@ -100,7 +99,7 @@
   <!--================Single Product Area =================-->
   <div id="singleproduct" class="product_image_area">
 
-   </div>
+  </div>
   <!--================End Single Product Area =================-->
 
   <!--================Product Description Area =================-->
@@ -602,7 +601,6 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Producto</a></li>
                 <li><a href="#">Marca</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
@@ -674,7 +672,7 @@
     </div>
   </footer>
   <!--================ End footer Area  =================-->
-<template id="template-Product">
+  <template id="template-Product">
     <div id="sproduct" class="container">
       <div class="row s_product_inner">
         <div class="col-lg-6">
@@ -682,12 +680,12 @@
             <div class="single-prd-item">
               <img class="img-fluid" src="img/product/product1.jpg" alt="" />
             </div>
-             <div class="single-prd-item">
-							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-						</div> 
+            <div class="single-prd-item">
+              <img class="img-fluid" src="img/category/s-p1.jpg" alt="">
+            </div>
+            <div class="single-prd-item">
+              <img class="img-fluid" src="img/category/s-p1.jpg" alt="">
+            </div>
           </div>
         </div>
         <div class="col-lg-5 offset-lg-1">
@@ -718,13 +716,15 @@
             </p>
             <div class="product_count">
               <label for="qty">Cantidad:</label>
-              <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++; return false;"
+              <button
+                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++; return false;"
                 class="increase items-count" type="button">
                 <i class="ti-angle-left"></i>
               </button>
               <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:"
                 class="input-text qty" />
-              <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--; return false;"
+              <button
+                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--; return false;"
                 class="reduced items-count" type="button">
                 <i class="ti-angle-right"></i>
               </button>
@@ -737,8 +737,8 @@
           </div>
         </div>
       </div>
-  </div>
-</template>
+    </div>
+  </template>
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="vendors/skrollr.min.js"></script>
@@ -752,7 +752,7 @@
   <script src="js/controlador.js"></script>
   <script src="js/controlador-index-sp.js"></script>
   <script src="js/notify.js"></script>
- 
+
 </body>
 
 </html>
