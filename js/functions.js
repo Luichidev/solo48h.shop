@@ -53,18 +53,11 @@ function generateCart() {
 //DESCRIPTION: Esborra un a un els elements
 //AUTOR: Sandra Sarmiento
 function removeFromCart(id) {
-  for (let i = 0; i < cart.length; i++) {
-    if (id === cart[i].id) {
-      if (cart[i].quantity > 1) {
-        cart[i].quantity--
-      } else {
-        cart.splice(i, 1)
-      }
-      return cart
-    }
-  }
-  return cart
-}
+  const findId = (cart.findIndex(el => el.id === id))
+  cart.splice(findId, 1);
+ }
+
+
 //PROTOTYPE:  Void orderByProduct()
 //DESCRIPTION: Ordena en forma descendente los productos dentro de cart.
 //AUTOR: Dorian Fanttini
