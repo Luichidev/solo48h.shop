@@ -9,6 +9,7 @@ const Productos = [
     precio: 5.5,
     categoria: 'Electrónica',
     popularity: 0,
+    tendencia: false,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const Productos = [
     precio: 16.99,
     categoria: 'Deporte',
     popularity: 0,
+    tendencia: true,
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const Productos = [
     precio: 19.95,
     categoria: 'Deporte',
     popularity: 0,
+    tendencia: true,
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const Productos = [
     precio: 4.15,
     categoria: 'Salud y Belleza',
     popularity: 1,
+    tendencia: true,
   },
   {
     id: 5,
@@ -50,6 +54,7 @@ const Productos = [
     precio: 0.65,
     categoria: 'Hogar',
     popularity: 0,
+    tendencia: true,
   },
   {
     id: 6,
@@ -60,6 +65,7 @@ const Productos = [
     precio: 5.5,
     categoria: 'Cosmética',
     popularity: 0,
+    tendencia: true,
   },
   {
     id: 7,
@@ -71,6 +77,7 @@ const Productos = [
     precio: 2.45,
     categoria: 'Bricolaje',
     popularity: 0,
+    tendencia: false,
   },
   {
     id: 8,
@@ -81,6 +88,7 @@ const Productos = [
     precio: 2.18,
     categoria: 'Salud y Belleza',
     popularity: 0,
+    tendencia: true,
   },
   {
     id: 9,
@@ -91,6 +99,7 @@ const Productos = [
     precio: 0.99,
     categoria: 'Hogar',
     popularity: 0,
+    tendencia: false,
   },
   {
     id: 10,
@@ -101,6 +110,7 @@ const Productos = [
     precio: 2.99,
     categoria: 'Alimentación',
     popularity: 0,
+    tendencia: false,
   },
 ]
 //array for the shopping list:

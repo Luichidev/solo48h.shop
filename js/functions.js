@@ -123,7 +123,7 @@ function getProductsFromCategory(categoria) {
   })
   return aux
 }
-//Prototype: functiona ProductsByPopularity()
+//Prototype: function ProductsByPopularity()
 //Description: mUestra los productos populares.
 //Autor:Tania Guimerà
 function ProductsByPopularity() {
@@ -214,4 +214,17 @@ function setLocalCart(key, value) {
 function getLocalCart(key) {
   let res = JSON.parse(localStorage.getItem(key))
   return res ? res : []
+}
+
+//Prototype: function ProductsByTrend()
+//Description: mUestra los productos en tendencia.
+//Autor:Sandra Sarmiento
+function ProductsByTrend() {
+  let aux=[]
+  Productos.forEach((product) => {
+    if (product.tendencia) {
+      aux.push(product)
+    }
+  })
+  return aux
 }
