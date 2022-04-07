@@ -98,73 +98,9 @@
   <!-- ================ end banner area ================= -->
 
   <!--================Single Product Area =================-->
-  <div class="product_image_area">
-    <div class="container">
-      <div class="row s_product_inner">
-        <div class="col-lg-6">
-          <div class="owl-carousel owl-theme s_Product_carousel">
-            <div class="single-prd-item">
-              <img class="img-fluid" src="img/product/product1.jpg" alt="" />
-            </div>
-            <!-- <div class="single-prd-item">
-							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-						</div> -->
-          </div>
-        </div>
-        <div class="col-lg-5 offset-lg-1">
-          <div class="s_product_text">
-            <h3>
-              Smartwatch, 1.69 pulgadas Hombre Mujer con Monitor de Frecuencia
-              Cardíaca
-            </h3>
-            <h2>16,99</h2>
-            <ul class="list">
-              <li>
-                <a class="active" href="#"><span>Categoría</span> : Deporte</a>
-              </li>
-              <li>
-                <a href="#"><span>Disponibilidad</span> : In Stock</a>
-              </li>
-            </ul>
-            <p>
-              1.69'' Pantalla Táctil Completa a Color TFT -Smartwatch
-              Multifuncións: como pulsera de actividad (podómetro, calorías,
-              distancia), oxígeno sanguíneo, entrenamiento respiratorio,
-              pulsómetro, monitoreo del sueño, 12 modos de deporte,
-              recordatorio sedentario, notificaciones de llamadas, mensajes
-              SMS y APP, cronómetro, reloj despertador, controla la música,
-              encontrar teléfono, pronóstico del tiempo, ajuste de brillo-12
-              Modos Deportivos y Función Impermeable IP68-24 Horas Monitor de
-              Frecuencia Cardíaca y Sueño
-            </p>
-            <div class="product_count">
-              <label for="qty">Cantidad:</label>
-              <button
-                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                class="increase items-count" type="button">
-                <i class="ti-angle-left"></i>
-              </button>
-              <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:"
-                class="input-text qty" />
-              <button
-                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;"
-                class="reduced items-count" type="button">
-                <i class="ti-angle-right"></i>
-              </button>
-              <a class="button primary-btn" href="#">Añadir al carrito</a>
-            </div>
-            <div class="card_area d-flex align-items-center">
-              <a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>
-              <a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div id="singleproduct" class="product_image_area">
+
+   </div>
   <!--================End Single Product Area =================-->
 
   <!--================Product Description Area =================-->
@@ -738,7 +674,71 @@
     </div>
   </footer>
   <!--================ End footer Area  =================-->
-
+<template id="template-Product">
+    <div id="sproduct" class="container">
+      <div class="row s_product_inner">
+        <div class="col-lg-6">
+          <div class="owl-carousel owl-theme s_Product_carousel">
+            <div class="single-prd-item">
+              <img class="img-fluid" src="img/product/product1.jpg" alt="" />
+            </div>
+             <div class="single-prd-item">
+							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
+						</div>
+						<div class="single-prd-item">
+							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
+						</div> 
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="s_product_text">
+            <h3>
+              Smartwatch, 1.69 pulgadas Hombre Mujer con Monitor de Frecuencia
+              Cardíaca
+            </h3>
+            <h2>16,99</h2>
+            <ul class="list">
+              <li>
+                <a class="active" href="#"><span>Categoría</span> : Deporte</a>
+              </li>
+              <li>
+                <a href="#"><span>Disponibilidad</span> : In Stock</a>
+              </li>
+            </ul>
+            <p>
+              1.69'' Pantalla Táctil Completa a Color TFT -Smartwatch
+              Multifuncións: como pulsera de actividad (podómetro, calorías,
+              distancia), oxígeno sanguíneo, entrenamiento respiratorio,
+              pulsómetro, monitoreo del sueño, 12 modos de deporte,
+              recordatorio sedentario, notificaciones de llamadas, mensajes
+              SMS y APP, cronómetro, reloj despertador, controla la música,
+              encontrar teléfono, pronóstico del tiempo, ajuste de brillo-12
+              Modos Deportivos y Función Impermeable IP68-24 Horas Monitor de
+              Frecuencia Cardíaca y Sueño
+            </p>
+            <div class="product_count">
+              <label for="qty">Cantidad:</label>
+              <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++; return false;"
+                class="increase items-count" type="button">
+                <i class="ti-angle-left"></i>
+              </button>
+              <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:"
+                class="input-text qty" />
+              <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--; return false;"
+                class="reduced items-count" type="button">
+                <i class="ti-angle-right"></i>
+              </button>
+              <a class="button primary-btn" href="#">Añadir al carrito</a>
+            </div>
+            <div class="card_area d-flex align-items-center">
+              <a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>
+              <a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</template>
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="vendors/skrollr.min.js"></script>
@@ -750,7 +750,9 @@
   <script src="js/functions.js"></script>
   <script src="js/productos.js"></script>
   <script src="js/controlador.js"></script>
+  <script src="js/controlador-index-sp.js"></script>
   <script src="js/notify.js"></script>
+ 
 </body>
 
 </html>
