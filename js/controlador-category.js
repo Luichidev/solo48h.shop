@@ -8,9 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
     ele.addEventListener('click', (e) => {
       e.preventDefault()
       let id = e.target.getAttribute('data-id')
-      printProductInSingleproduct(id)
       let url = new URL(window.location.href)
-      window.location.href = `${url.origin}/single-product.html`
+      window.location.href = `${url.origin}/single-product.html?id=${id}`
     })
   })
 })
