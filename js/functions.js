@@ -53,18 +53,12 @@ function generateCart() {
 //DESCRIPTION: Esborra un a un els elements
 //AUTOR: Sandra Sarmiento
 function removeFromCart(id) {
-  for (let i = 0; i < cart.length; i++) {
-    if (id === cart[i].id) {
-      if (cart[i].quantity > 1) {
-        cart[i].quantity--
-      } else {
-        cart.splice(i, 1)
-      }
-      return cart
-    }
+  const findId = cart.findIndex((el) => el.id === +id)
+  if (findId !== -1) {
+    cart.splice(findId, 1)
   }
-  return cart
 }
+
 //PROTOTYPE:  Void orderByProduct()
 //DESCRIPTION: Ordena en forma descendente los productos dentro de cart.
 //AUTOR: Dorian Fanttini
@@ -204,14 +198,14 @@ function updateNotify() {
 // PROTOTYPE: Void setLocalCart().
 // DESCRIPTION: Guarda nuestro carrito en localStorage
 //Autor: Luis Arana
-function setLocalCart(key, value) {
+function setLocal(key, value) {
   localStorage.setItem(key, JSON.stringify(value))
 }
 
 //PROOTOTYPE: Void getLocalCart().
 //DESCRIPTION: Recupera nuestro carrito de localStorage
 //Autor: Luis Arana
-function getLocalCart(key) {
+function getLocal(key) {
   let res = JSON.parse(localStorage.getItem(key))
   return res ? res : []
 }
