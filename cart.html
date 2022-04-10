@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="vendors/nice-select/nice-select.css" />
   <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -141,8 +142,8 @@
               </tr>
             </thead>
             <tbody id='tbody'>
-
             </tbody>
+            <tbody id='tfooter'></tbody>
           </table>
         </div>
       </div>
@@ -256,26 +257,22 @@
           </div>
         </div>
       </td>
-      <td>
-        <h5 class='price'>16,99€</h5>
+      <td class='priceRow'>
+        <h5 class='price'>16,99</h5><span>€</span>
       </td>
       <td>
         <div class="product_count">
           <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty" />
-          <button
-            onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-            class="increase items-count" type="button">
+          <button class="increase items-count" type="button">
             <i class="lnr lnr-chevron-up"></i>
           </button>
-          <button
-            onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;"
-            class="reduced items-count" type="button">
+          <button class="reduced items-count" type="button">
             <i class="lnr lnr-chevron-down"></i>
           </button>
         </div>
       </td>
-      <td>
-        <h5 class='subtotal'>16,99€</h5>
+      <td class='subtotalRow'>
+        <h5 class='subtotal'>16,99</h5><span>€</span>
       </td>
     </tr>
   </template>
@@ -288,9 +285,9 @@
       <td></td>
       <td>
         <div class="cupon_text d-flex align-items-center">
-          <input type="text" placeholder="Coupon Code" />
-          <a class="primary-btn" href="#">Aplica</a>
-          <a class="button" href="#">Tienes un cupón?</a>
+          <input type="text" class="coupon-input" placeholder="Coupon Code" />
+          <a class="primary-btn coupon" href="#">Aplica</a>
+          <p class='button'>Tienes un cupón?</p>
         </div>
       </td>
     </tr>
@@ -300,8 +297,8 @@
       <td>
         <h5>Subtotal</h5>
       </td>
-      <td>
-        <h5 id='total'>23,59€</h5>
+      <td class='totalRow'>
+        <h5 id='total'>23,59 </h5><span>€</span>
       </td>
     </tr>
     <tr class="out_button_area">
@@ -311,7 +308,7 @@
       <td>
         <div class="checkout_btn_inner d-flex align-items-center">
           <a class="gray_btn" href="#">Continua comprando</a>
-          <a class="primary-btn ml-2" href="#">Ir al carrito</a>
+          <a class="primary-btn ml-2" href="checkout.html">Pagar</a>
         </div>
       </td>
     </tr>

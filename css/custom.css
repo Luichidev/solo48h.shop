@@ -1,0 +1,6 @@
+#tbody .priceRow,
+#tbody .subtotalRow,
+#tfooter .totalRow {
+  display: flex;
+  align-items: center;
+}
