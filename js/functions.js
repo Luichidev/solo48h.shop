@@ -214,11 +214,23 @@ function getLocal(key) {
 //Description: mUestra los productos en tendencia.
 //Autor:Sandra Sarmiento
 function ProductsByTrend() {
-  let aux=[]
+  let aux = []
   Productos.forEach((product) => {
     if (product.tendencia) {
       aux.push(product)
     }
   })
   return aux
+}
+
+//Prototype: void updateCart()
+//Description: Actualiza el carrito
+//Autor: Luis Arana
+function updateCart(id, quantity) {
+  const objIndex = cart.findIndex((obj) => obj.id == id)
+  if (objIndex !== -1) {
+    cart[objIndex].quantity = +quantity
+    let sub = +cart[objIndex].precio * +quantity
+    cart[objIndex].subtotal = sub.toFixed(2)
+  }
 }
