@@ -1,6 +1,6 @@
 //Aqui va el código que enlazará las funciones con el DOM
 window.addEventListener('DOMContentLoaded', () => {
-  printProductsInCategories()
+  printProductsInCategories(Productos)
   createSubTotal()
   const allLinkProducts = document.querySelectorAll('.card-product__title a')
 
@@ -15,12 +15,14 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // Pintar los productos en la pagina de categorias
-function printProductsInCategories() {
+function printProductsInCategories(array) {
+  console.log(array)
   const cards = document.getElementById('cards')
+  cards.innerHTML = ''
   const templateCard = document.getElementById('template-card').content
   const fragment = document.createDocumentFragment()
 
-  Productos.forEach((producto) => {
+  array.forEach((producto) => {
     templateCard.querySelector('.card-img').setAttribute('src', producto.url)
     templateCard.querySelector('.ti-trash').setAttribute('data-id', producto.id)
     templateCard.querySelector('.remove').setAttribute('data-id', producto.id)
