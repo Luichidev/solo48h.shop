@@ -23,7 +23,7 @@ const Productos = [
   },
   {
     id: 3,
-    titulo: 'Zapatillas de deporte Hombre Runnig',
+    titulo: 'Zapato',
     url: ' imagen/deporte/producto_07',
     descripcion:
       'Material exterior: Sintético -Revestimiento:sintético - Material de la suela: Caucho -Cierre: Cordones -Altura del tacón:2,5 centímetros -Tipo de tacón: Plataforma  - Anchura del zapato: Normal centímetros',

@@ -89,15 +89,19 @@
 
             <ul class="nav-shop">
               <li class="nav-item">
-                <button><i class="ti-search"></i></button>
+                <i class="ti-search"></i>
+                <input id="search" type="text" class="input" placeholder="search">
+              </li>
+              <li class="results-container">
+                <i class="results-list" id="list"></i>
               </li>
               <li class="nav-item">
                 <button>
-                  <i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span>
+                  <i class="ti-shopping-cart"></i><span class="nav-shop__circle"></span>
                 </button>
               </li>
               <li class="nav-item">
-                <a class="button button-header" href="#">Comprar</a>
+                <!-- <a class="button button-header" href="#">Comprar</a> -->
               </li>
             </ul>
           </div>
@@ -831,6 +835,7 @@
   <script src="js/functions.js"></script>
   <script src="js/productos.js"></script>
   <script src="js/controlador.js"></script>
+  <script src="/js/cercador.js"></script>
 </body>
 
 </html>
