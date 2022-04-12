@@ -118,3 +118,5 @@ var cartList = []
 var cart = []
 
 var subtotal = {}
+
+let DEV = false

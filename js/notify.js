@@ -9,7 +9,9 @@ const cardIcons = document.querySelector('#cards')
 cartIconNumber.innerHTML = count
 cartIcon.addEventListener('click', () => {
   let url = new URL(window.location.href)
-  window.location.href = `${url.origin}/cart.html`
+  DEV
+    ? (window.location.href = `${url.origin}/cart.html`)
+    : (window.location.href = `${url.href}/cart.html`)
 })
 
 try {
