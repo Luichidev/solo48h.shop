@@ -136,35 +136,41 @@
             <ul class="main-categories">
               <li class="common-filter">
                 <form action="#">
-                  <ul>
+                  <ul id='filter'>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="men" name="brand" />
+                      <label data-categoria='todos' for="men">Todos<span></span>
+                        ()</span></label>
+                    </li>
                     <li class="filter-list">
                       <input class="pixel-radio" type="radio" id="men" name="brand" /><label
-                        for="men">Alimentación<span> (3789)</span></label>
+                        data-categoria='Alimentación' for="men">Alimentación<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label for="women">Belleza y
-                        salud<span> (4069)</span></label>
+                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label data-categoria='Salud y
+                        Belleza' for="women">Salud y
+                        Belleza<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="accessories" name="brand" />Deportes<label
-                        for="accessories"><span> (2909)</span></label>
+                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label data-categoria='Deporte'
+                        for="women">Deporte<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="footwear" name="brand" /><label
-                        for="footwear">Hogar<span> (5290)</span></label>
+                      <input class="pixel-radio" type="radio" id="footwear" name="brand" /><label data-categoria='Hogar'
+                        for="footwear">Hogar<span> ()</span></label>
                     </li>
                     <li class="filter-list">
                       <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
-                        for="bayItem">Bricolage<span> (1463)</span></label>
-                    </li>
-                    <!-- <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="electronics" name="brand" /><label
-                        for="electronics">Electronics<span> (3600)</span></label>
+                        data-categoria='Bricolaje' for="bayItem">Bricolaje<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="food" name="brand" /><label for="food">Food<span>
-                          (3600)</span></label>
-                    </li> -->
+                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
+                        data-categoria='Electrónica' for="bayItem">Electrónica<span> ()</span></label>
+                    </li>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
+                        data-categoria='Cosmética' for="bayItem">Cosmética<span> ()</span></label>
+                    </li>
                   </ul>
                 </form>
               </li>

@@ -12,11 +12,27 @@ window.addEventListener('DOMContentLoaded', () => {
       window.location.href = `${url.origin}/single-product.html?id=${id}`
     })
   })
+
+  const filters = document.querySelectorAll('#filter > .filter-list')
+
+  filters.forEach((ele) => {
+    ele.addEventListener('click', (e) => {
+      e.preventDefault()
+      let categoria = e.target.getAttribute('data-categoria')
+      if (categoria !== 'todos') {
+        const arrayCategoria = Productos.filter((producto) => {
+          return producto.categoria === categoria
+        })
+        printProductsInCategories(arrayCategoria)
+      } else {
+        printProductsInCategories(Productos)
+      }
+    })
+  })
 })
 
 // Pintar los productos en la pagina de categorias
 function printProductsInCategories(array) {
-  console.log(array)
   const cards = document.getElementById('cards')
   cards.innerHTML = ''
   const templateCard = document.getElementById('template-card').content
