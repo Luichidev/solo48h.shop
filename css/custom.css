@@ -4,3 +4,23 @@
   display: flex;
   align-items: center;
 }
+
+.nav-shop li a {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-shop li a .nav-shop__circle {
+  font-size: 9px;
+  display: inline-block;
+  background: #39a6a3;
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -12px;
+}

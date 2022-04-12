@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="vendors/nice-select/nice-select.css" />
   <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -91,13 +92,13 @@
                 <button><i class="ti-search"></i></button>
               </li> -->
               <li class="nav-item">
-                <button>
-                  <i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span>
-                </button>
+                <a class='iconCart'>
+                  <i class="ti-shopping-cart"></i><span class="nav-shop__circle"></span>
+                </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="button button-header" href="#">Comprar</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -138,38 +139,38 @@
                 <form action="#">
                   <ul id='filter'>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="men" name="brand" />
-                      <label data-categoria='todos' for="men">Todos<span></span>
+                      <input class="pixel-radio" type="radio" id="all" name="brand" checked /><label
+                        data-categoria='todos' for="all">Todos<span></span>
                         ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="men" name="brand" /><label
-                        data-categoria='Alimentación' for="men">Alimentación<span> ()</span></label>
+                      <input class="pixel-radio" type="radio" id="food" name="brand" /><label
+                        data-categoria='Alimentación' for="food">Alimentación<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label data-categoria='Salud y
-                        Belleza' for="women">Salud y
+                      <input class="pixel-radio" type="radio" id="health" name="brand" /><label data-categoria='Salud y
+                        Belleza' for="health">Salud y
                         Belleza<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label data-categoria='Deporte'
-                        for="women">Deporte<span> ()</span></label>
+                      <input class="pixel-radio" type="radio" id="sport" name="brand" /><label data-categoria='Deporte'
+                        for="sport">Deporte<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="footwear" name="brand" /><label data-categoria='Hogar'
-                        for="footwear">Hogar<span> ()</span></label>
+                      <input class="pixel-radio" type="radio" id="homeC" name="brand" /><label data-categoria='Hogar'
+                        for="homeC">Hogar<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
-                        data-categoria='Bricolaje' for="bayItem">Bricolaje<span> ()</span></label>
+                      <input class="pixel-radio" type="radio" id="diy" name="brand" /><label data-categoria='Bricolaje'
+                        for="diy">Bricolaje<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
-                        data-categoria='Electrónica' for="bayItem">Electrónica<span> ()</span></label>
+                      <input class="pixel-radio" type="radio" id="electronics" name="brand" /><label
+                        data-categoria='Electrónica' for="electronics">Electrónica<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
-                        data-categoria='Cosmética' for="bayItem">Cosmética<span> ()</span></label>
+                      <input class="pixel-radio" type="radio" id="cosmetics" name="brand" /><label
+                        data-categoria='Cosmética' for="cosmetics">Cosmética<span> ()</span></label>
                     </li>
                   </ul>
                 </form>
@@ -565,10 +566,9 @@
   <script src="js/main.js"></script>
   <script src="js/functions.js"></script>
   <script src="js/productos.js"></script>
-  <script src="js/controlador-category.js"></script>
   <script src="js/notify.js"></script>
+  <script src="js/controlador-category.js"></script>
   <script src="/js/cercador.js"></script>
-  <!-- <script src="js/controlador-index-sp.js"></script> -->
 </body>
 
 </html>
