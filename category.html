@@ -44,9 +44,6 @@
                     <a class="nav-link" href="category.html">Categorías</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="single-product.html">Producto</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="checkout.html">Comprar</a>
                   </li>
                   <li class="nav-item">
@@ -90,9 +87,9 @@
             </ul>
 
             <ul class="nav-shop">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <button><i class="ti-search"></i></button>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <button>
                   <i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span>
@@ -139,34 +136,41 @@
             <ul class="main-categories">
               <li class="common-filter">
                 <form action="#">
-                  <ul>
+                  <ul id='filter'>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="men" name="brand" /><label for="men">Alimentación<span>
-                          (3789)</span></label>
+                      <input class="pixel-radio" type="radio" id="men" name="brand" />
+                      <label data-categoria='todos' for="men">Todos<span></span>
+                        ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label for="women">Belleza y salud<span>
-                          (4069)</span></label>
+                      <input class="pixel-radio" type="radio" id="men" name="brand" /><label
+                        data-categoria='Alimentación' for="men">Alimentación<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="accessories" name="brand" />Deportes<label
-                        for="accessories"><span> (2909)</span></label>
+                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label data-categoria='Salud y
+                        Belleza' for="women">Salud y
+                        Belleza<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="footwear" name="brand" /><label
-                        for="footwear">Hogar<span> (5290)</span></label>
+                      <input class="pixel-radio" type="radio" id="women" name="brand" /><label data-categoria='Deporte'
+                        for="women">Deporte<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label for="bayItem">Bricolage<span> (1463)</span></label>
-                    </li>
-                    <!-- <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="electronics" name="brand" /><label
-                        for="electronics">Electronics<span> (3600)</span></label>
+                      <input class="pixel-radio" type="radio" id="footwear" name="brand" /><label data-categoria='Hogar'
+                        for="footwear">Hogar<span> ()</span></label>
                     </li>
                     <li class="filter-list">
-                      <input class="pixel-radio" type="radio" id="food" name="brand" /><label for="food">Food<span>
-                          (3600)</span></label>
-                    </li> -->
+                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
+                        data-categoria='Bricolaje' for="bayItem">Bricolaje<span> ()</span></label>
+                    </li>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
+                        data-categoria='Electrónica' for="bayItem">Electrónica<span> ()</span></label>
+                    </li>
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="bayItem" name="brand" /><label
+                        data-categoria='Cosmética' for="bayItem">Cosmética<span> ()</span></label>
+                    </li>
                   </ul>
                 </form>
               </li>
@@ -214,7 +218,8 @@
                       for="balckleather">Rojo<span>(29)</span></label>
                   </li>
                   <li class="filter-list">
-                    <input class="pixel-radio" type="radio" id="blackred" name="color" /><label for="blackred">Blanco<span>(82)</span></label>
+                    <input class="pixel-radio" type="radio" id="blackred" name="color" /><label
+                      for="blackred">Blanco<span>(82)</span></label>
                   </li>
                   <li class="filter-list">
                     <input class="pixel-radio" type="radio" id="gold" name="color" /><label
@@ -254,7 +259,7 @@
               </select>
             </div>
             <div class="sorting mr-auto">
-             <select>
+              <select>
                 <option value="1">Muestra 10 productos</option>
                 <option value="1">Muestra 20 productos</option>
                 <option value="1">Muestra 50 productos</option>
@@ -262,9 +267,9 @@
             </div>
             <div>
               <div class="input-group filter-bar-search">
-                <input type="text" placeholder="Search" />
+                <input id="busca" type="text" placeholder="Search" />
                 <div class="input-group-append">
-                  <button type="button"><i class="ti-search"></i></button>
+                  <button id="buscador" type="button"><i class="ti-search"></i></button>
                 </div>
               </div>
             </div>
@@ -272,232 +277,8 @@
           <!-- End Filter Bar -->
           <!-- Start Best Seller -->
           <section class="lattest-product-area pb-40 category-list">
-            <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product1.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Accesorio Deporte</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Smartwatch</a>
-                    </h4>
-                    <p class="card-product__price">16,99€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product2.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Belleza y salud</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Colonia After shave</a>
-                    </h4>
-                    <p class="card-product__price">4,15€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product3.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Bricolage</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Pegamento extrafuerte</a>
-                    </h4>
-                    <p class="card-product__price">2,45€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product4.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Alimentación</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Galletas Nocilla</a>
-                    </h4>
-                    <p class="card-product__price">2,99€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product5.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Belleza y salud</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Gel higienizante de manos</a>
-                    </h4>
-                    <p class="card-product__price">2,18€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product6.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Hogar</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Servilletas de papel</a>
-                    </h4>
-                    <p class="card-product__price">0,65€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product7.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Hogar</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Spray Cleaner</a>
-                    </h4>
-                    <p class="card-product__price">0,99€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product8.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Jardinería</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Maceta de riego automático</a>
-                    </h4>
-                    <p class="card-product__price">3,60€</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/product9.jpg" alt="" />
-                    <ul class="card-product__imgOverlay">
-                      <li>
-                        <button><i class="ti-search"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-shopping-cart"></i></button>
-                      </li>
-                      <li>
-                        <button><i class="ti-heart"></i></button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Alimentación</p>
-                    <h4 class="card-product__title">
-                      <a href="#">Aceite de oliva natural 5lt.</a>
-                    </h4>
-                    <p class="card-product__price">5,65€</p>
-                  </div>
-                </div>
-              </div>
+            <div class="row" id="cards">
+
             </div>
           </section>
           <!-- End Best Seller -->
@@ -630,9 +411,7 @@
         <h3 class="subscribe__title">
           Obtenga actualizaciones desde cualquier lugar
         </h3>
-        <p>
-          Sólo te tomará un minuto agregarte a nuestra Newsletter.
-        </p>
+        <p>Sólo te tomará un minuto agregarte a nuestra Newsletter.</p>
         <div id="mc_embed_signup">
           <form target="_blank"
             action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -664,11 +443,10 @@
             <div class="single-footer-widget tp_widgets">
               <h4 class="footer_title large_title">Nuestra Misión</h4>
               <p>
-                Los mejores productos a los mejores precios, es nuestro lema y todo en solo 48 horas!
+                Los mejores productos a los mejores precios, es nuestro lema y
+                todo en solo 48 horas!
               </p>
-              <p>
-                Obten las mejores ofertas siempre
-              </p>
+              <p>Obten las mejores ofertas siempre</p>
             </div>
           </div>
           <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
@@ -678,7 +456,6 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Producto</a></li>
                 <li><a href="#">Marca</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
@@ -738,7 +515,7 @@
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
             <script>
-              document.write(new Date().getFullYear())
+              document.write(new Date().getFullYear());
             </script>
             All rights reserved | This template is made with
             <i class="fa fa-heart" aria-hidden="true"></i> by
@@ -750,7 +527,33 @@
     </div>
   </footer>
   <!--================ End footer Area  =================-->
-
+  <template id="template-card">
+    <div class="col-md-6 col-lg-4">
+      <div class="card text-center card-product">
+        <div class="card-product__img">
+          <img class="card-img" src="img/product/product1.jpg" alt="" />
+          <ul class="card-product__imgOverlay">
+            <li>
+              <button class='remove'><i class="ti-trash"></i></button>
+            </li>
+            <li>
+              <button class='add'><i class="ti-shopping-cart"></i></button>
+            </li>
+            <li>
+              <button class='like'><i class="ti-heart"></i></button>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <p>Accesorio Deporte</p>
+          <h4 class="card-product__title">
+            <a href="#">Smartwatch</a>
+          </h4>
+          <p class="card-product__price">16,99</p>
+        </div>
+      </div>
+    </div>
+  </template>
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="vendors/skrollr.min.js"></script>
@@ -760,6 +563,12 @@
   <script src="vendors/jquery.ajaxchimp.min.js"></script>
   <script src="vendors/mail-script.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/controlador-category.js"></script>
+  <script src="js/notify.js"></script>
+  <script src="/js/cercador.js"></script>
+  <!-- <script src="js/controlador-index-sp.js"></script> -->
 </body>
 
 </html>

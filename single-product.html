@@ -39,7 +39,6 @@
                   aria-expanded="false">Tienda</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item"><a class="nav-link" href="category.html">Categorías</a></li>
-                  <li class="nav-item"><a class="nav-link" href="single-product.html">Producto</a></li>
                   <li class="nav-item"><a class="nav-link" href="checkout.html">Comprar</a></li>
                   <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmar</a></li>
                   <li class="nav-item"><a class="nav-link" href="cart.html">Mi Carrito</a></li>
@@ -66,7 +65,7 @@
             </ul>
 
             <ul class="nav-shop">
-              <li class="nav-item"><button><i class="ti-search"></i></button></li>
+              <!-- <li class="nav-item"><button><i class="ti-search"></i></button></li> -->
               <li class="nav-item"><button><i class="ti-shopping-cart"></i><span
                     class="nav-shop__circle">3</span></button> </li>
               <li class="nav-item"><a class="button button-header" href="#">Comprar</a></li>
@@ -98,72 +97,8 @@
   <!-- ================ end banner area ================= -->
 
   <!--================Single Product Area =================-->
-  <div class="product_image_area">
-    <div class="container">
-      <div class="row s_product_inner">
-        <div class="col-lg-6">
-          <div class="owl-carousel owl-theme s_Product_carousel">
-            <div class="single-prd-item">
-              <img class="img-fluid" src="img/product/product1.jpg" alt="" />
-            </div>
-            <!-- <div class="single-prd-item">
-							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-						</div> -->
-          </div>
-        </div>
-        <div class="col-lg-5 offset-lg-1">
-          <div class="s_product_text">
-            <h3>
-              Smartwatch, 1.69 pulgadas Hombre Mujer con Monitor de Frecuencia
-              Cardíaca
-            </h3>
-            <h2>16,99</h2>
-            <ul class="list">
-              <li>
-                <a class="active" href="#"><span>Categoría</span> : Deporte</a>
-              </li>
-              <li>
-                <a href="#"><span>Disponibilidad</span> : In Stock</a>
-              </li>
-            </ul>
-            <p>
-              1.69'' Pantalla Táctil Completa a Color TFT -Smartwatch
-              Multifuncións: como pulsera de actividad (podómetro, calorías,
-              distancia), oxígeno sanguíneo, entrenamiento respiratorio,
-              pulsómetro, monitoreo del sueño, 12 modos de deporte,
-              recordatorio sedentario, notificaciones de llamadas, mensajes
-              SMS y APP, cronómetro, reloj despertador, controla la música,
-              encontrar teléfono, pronóstico del tiempo, ajuste de brillo-12
-              Modos Deportivos y Función Impermeable IP68-24 Horas Monitor de
-              Frecuencia Cardíaca y Sueño
-            </p>
-            <div class="product_count">
-              <label for="qty">Cantidad:</label>
-              <button
-                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                class="increase items-count" type="button">
-                <i class="ti-angle-left"></i>
-              </button>
-              <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:"
-                class="input-text qty" />
-              <button
-                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;"
-                class="reduced items-count" type="button">
-                <i class="ti-angle-right"></i>
-              </button>
-              <a class="button primary-btn" href="#">Añadir al carrito</a>
-            </div>
-            <div class="card_area d-flex align-items-center">
-              <a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>
-              <a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div id="singleproduct" class="product_image_area">
+
   </div>
   <!--================End Single Product Area =================-->
 
@@ -308,7 +243,7 @@
                     </div>
                   </div>
                   <p>
-                    Compré este reloj y me encanta.  Lo recomendaría al 100%.  
+                    Compré este reloj y me encanta. Lo recomendaría al 100%.
                   </p>
                 </div>
                 <div class="review_item reply">
@@ -323,7 +258,7 @@
                     </div>
                   </div>
                   <p>
-                   Me gustaron mucho las funcionalidades del reloj y sobretodo el precio.  Buena relación calidad-precio
+                    Me gustaron mucho las funcionalidades del reloj y sobretodo el precio. Buena relación calidad-precio
                   </p>
                 </div>
                 <div class="review_item">
@@ -338,7 +273,8 @@
                     </div>
                   </div>
                   <p>
-                    Me encantan los relojes, este reloj no está hecho en México pero es de buena calidad.  También me gustó mucho la facilidad de compra de esta página web. 
+                    Me encantan los relojes, este reloj no está hecho en México pero es de buena calidad. También me
+                    gustó mucho la facilidad de compra de esta página web.
                   </p>
                 </div>
               </div>
@@ -434,7 +370,7 @@
                     </div>
                   </div>
                   <p>
-                    Me encantó este -Smartwatch tiene una magnifica relación calidad-precio. 
+                    Me encantó este -Smartwatch tiene una magnifica relación calidad-precio.
                   </p>
                 </div>
                 <div class="review_item">
@@ -452,7 +388,7 @@
                     </div>
                   </div>
                   <p>
-                   El reloj es bastante asequible y tiene muy buenas funcionalidades! Lo recomendaría sin dudarlo.
+                    El reloj es bastante asequible y tiene muy buenas funcionalidades! Lo recomendaría sin dudarlo.
                   </p>
                 </div>
                 <div class="review_item">
@@ -470,7 +406,7 @@
                     </div>
                   </div>
                   <p>
-                   En mis tiempos no había smartwatches como ahora, me lo regaló mi nieto y estoy encantado. 
+                    En mis tiempos no había smartwatches como ahora, me lo regaló mi nieto y estoy encantado.
                   </p>
                 </div>
               </div>
@@ -665,7 +601,6 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Producto</a></li>
                 <li><a href="#">Marca</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
@@ -737,7 +672,73 @@
     </div>
   </footer>
   <!--================ End footer Area  =================-->
-
+  <template id="template-Product">
+    <div id="sproduct" class="container">
+      <div class="row s_product_inner">
+        <div class="col-lg-6">
+          <div class="owl-carousel owl-theme s_Product_carousel">
+            <div class="single-prd-item">
+              <img class="img-fluid" src="img/product/product1.jpg" alt="" />
+            </div>
+            <div class="single-prd-item">
+              <img class="img-fluid" src="img/category/s-p1.jpg" alt="">
+            </div>
+            <div class="single-prd-item">
+              <img class="img-fluid" src="img/category/s-p1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="s_product_text">
+            <h3>
+              Smartwatch, 1.69 pulgadas Hombre Mujer con Monitor de Frecuencia
+              Cardíaca
+            </h3>
+            <h2>16,99</h2>
+            <ul class="list">
+              <li>
+                <a class="active" href="#"><span>Categoría</span> : Deporte</a>
+              </li>
+              <li>
+                <a href="#"><span>Disponibilidad</span> : In Stock</a>
+              </li>
+            </ul>
+            <p class='descripcion'>
+              1.69'' Pantalla Táctil Completa a Color TFT -Smartwatch
+              Multifuncións: como pulsera de actividad (podómetro, calorías,
+              distancia), oxígeno sanguíneo, entrenamiento respiratorio,
+              pulsómetro, monitoreo del sueño, 12 modos de deporte,
+              recordatorio sedentario, notificaciones de llamadas, mensajes
+              SMS y APP, cronómetro, reloj despertador, controla la música,
+              encontrar teléfono, pronóstico del tiempo, ajuste de brillo-12
+              Modos Deportivos y Función Impermeable IP68-24 Horas Monitor de
+              Frecuencia Cardíaca y Sueño
+            </p>
+            <div class="product_count">
+              <label for="qty">Cantidad:</label>
+              <button
+                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++; return false;"
+                class="increase items-count" type="button">
+                <i class="ti-angle-left"></i>
+              </button>
+              <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:"
+                class="input-text qty" />
+              <button
+                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--; return false;"
+                class="reduced items-count" type="button">
+                <i class="ti-angle-right"></i>
+              </button>
+              <a class="button primary-btn" href="#">Añadir al carrito</a>
+            </div>
+            <div class="card_area d-flex align-items-center">
+              <a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>
+              <a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="vendors/skrollr.min.js"></script>
@@ -746,6 +747,11 @@
   <script src="vendors/jquery.ajaxchimp.min.js"></script>
   <script src="vendors/mail-script.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/controlador-index-sp.js"></script>
+  <script src="js/notify.js"></script>
+
 </body>
 
 </html>

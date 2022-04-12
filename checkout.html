@@ -45,9 +45,6 @@
                     <a class="nav-link" href="category.html">Categorías</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="single-product.html">Producto</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="checkout.html">Comprar</a>
                   </li>
                   <li class="nav-item">
@@ -91,9 +88,9 @@
             </ul>
 
             <ul class="nav-shop">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <button><i class="ti-search"></i></button>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <button>
                   <i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span>
@@ -137,12 +134,14 @@
         <div class="check_title">
           <h2>Cliente frecuente? <a href="#">Inicia sesión</a></h2>
         </div>
-        <p>Si has comprado anteriormente con nosotros, escribe tus credenciales para iniciar sesión. Si eres un cliente nuevo procede por favor al registro de compra en la sección de envío y facturación.
+        <p>Si has comprado anteriormente con nosotros, escribe tus credenciales para iniciar sesión. Si eres un cliente
+          nuevo procede por favor al registro de compra en la sección de envío y facturación.
         </p>
         <form class="row contact_form" action="#" method="post" novalidate="novalidate">
           <div class="col-md-6 form-group p_star">
-            <input type="text" class="form-control" placeholder="Email o nombre de usuario*" onfocus="this.placeholder=''"
-              onblur="this.placeholder = 'Email o nombre de usuario*'" id="name" name="name" />
+            <input type="text" class="form-control" placeholder="Email o nombre de usuario*"
+              onfocus="this.placeholder=''" onblur="this.placeholder = 'Email o nombre de usuario*'" id="name"
+              name="name" />
             <!-- <span class="placeholder" data-placeholder="Username or Email"></span> -->
           </div>
           <div class="col-md-6 form-group p_star">
@@ -185,7 +184,8 @@
                 <span class="placeholder" data-placeholder="Last name"></span>
               </div>
               <div class="col-md-12 form-group">
-                <input type="text" class="form-control" id="company" name="company" placeholder="Nombre de la compañia" />
+                <input type="text" class="form-control" id="company" name="company"
+                  placeholder="Nombre de la compañia" />
               </div>
               <div class="col-md-6 form-group p_star">
                 <input type="text" class="form-control" id="number" name="number" />
@@ -281,7 +281,8 @@
                   <div class="check"></div>
                 </div>
                 <p>
-                  Por favor verifica el nombre de la tienda, dirección, pueblo, región/condado, código postal de la tienda.
+                  Por favor verifica el nombre de la tienda, dirección, pueblo, región/condado, código postal de la
+                  tienda.
                 </p>
               </div>
               <div class="payment_item active">
@@ -292,7 +293,8 @@
                   <div class="check"></div>
                 </div>
                 <p>
-                  Pago via PayPal: puedes realizar tu pago con este servicio o con tu tarjeta de crédito si no tienes cuenta de Paypal.
+                  Pago via PayPal: puedes realizar tu pago con este servicio o con tu tarjeta de crédito si no tienes
+                  cuenta de Paypal.
                 </p>
               </div>
               <div class="creat_account">
@@ -334,7 +336,6 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Producto</a></li>
                 <li><a href="#">Marca</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
@@ -415,6 +416,10 @@
   <script src="vendors/jquery.ajaxchimp.min.js"></script>
   <script src="vendors/mail-script.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/controlador.js"></script>
+  <script src="js/notify.js"></script>
 </body>
 
 </html>

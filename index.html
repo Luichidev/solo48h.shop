@@ -42,9 +42,6 @@
                     <a class="nav-link" href="category.html">Categorías</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="single-product.html">Producto</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="checkout.html">Comprar</a>
                   </li>
                   <li class="nav-item">
@@ -88,16 +85,20 @@
             </ul>
 
             <ul class="nav-shop">
-              <li class="nav-item">
-                <button><i class="ti-search"></i></button>
+              <!-- <li class="nav-item">
+                <i class="ti-search"></i>
+                <input id="search" type="text" class="input" placeholder="search">
               </li>
+              <li class="results-container">
+                <i class="results-list" id="list"></i>
+              </li> -->
               <li class="nav-item">
                 <button>
-                  <i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span>
+                  <i class="ti-shopping-cart"></i><span class="nav-shop__circle"></span>
                 </button>
               </li>
               <li class="nav-item">
-                <a class="button button-header" href="#">Comprar</a>
+                <!-- <a class="button button-header" href="#">Comprar</a> -->
               </li>
             </ul>
           </div>
@@ -119,13 +120,11 @@
           </div>
           <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
             <div class="hero-banner__content">
-              <h4>Comprar es divertido</h4>
-              <h1>Explore nuestro producto premium</h1>
+              <h4>Los mejores precios siempre</h4>
+              <h1>solo 48 horas</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit iure voluptatum atque accusantium tempore doloribus
-                quae facere? Quos, fugiat in itaque, soluta neque labore qui
-                quidem quibusdam odit, illum atque?
+                Bienvenido a nuestra web, donde podrás encontrar los mejores productos, las mejores marcas y los mejores precios. Pero no te esperes demasiado, ya que nuestras ofertas son tan buenas que solo las podemos mantener 48 horas. 
+                No rush!  
               </p>
               <a class="button button-hero" href="#">Navega ahora</a>
             </div>
@@ -135,244 +134,16 @@
     </section>
     <!--================ Hero banner start =================-->
 
-    <!--================ Hero Carousel start =================-->
-    <section class="section-margin mt-0">
-      <div class="owl-carousel owl-theme hero-carousel">
-        <div class="hero-carousel__slide">
-          <img src="img/home/hero-slide1.jpg" alt="" class="img-fluid" />
-          <a href="#" class="hero-carousel__slideOverlay">
-            <h3>Zapatillas de deporte Hombre Runnig</h3>
-            <p>19,95€</p>
-          </a>
-        </div>
-        <div class="hero-carousel__slide">
-          <img src="img/home/hero-slide2.jpg" alt="" class="img-fluid" />
-          <a href="#" class="hero-carousel__slideOverlay">
-            <h3>Ratón Gaming Profesional-Sensor óptico</h3>
-            <p>5,50€</p>
-          </a>
-        </div>
-        <div class="hero-carousel__slide">
-          <img src="img/home/hero-slide3.jpg" alt="" class="img-fluid" />
-          <a href="#" class="hero-carousel__slideOverlay">
-            <h3>Paleta de Sombra de Ojos</h3>
-            <p>5,50€</p>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!--================ Hero Carousel end =================-->
-
     <!-- ================ trending product section start ================= -->
     <section class="section-margin calc-60px">
       <div class="container">
         <div class="section-intro pb-60px">
-          <p>Artículo popular en el mercado</p>
+          <p>Artículo de tendencia en el mercado</p>
           <h2>
             Productos <span class="section-intro__style">en Tendencia</span>
           </h2>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">
-                <img class="card-img" src="img/product/product1.jpg" alt="" />
-                <ul class="card-product__imgOverlay">
-                  <li>
-                    <button><i class="ti-search"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-shopping-cart"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-heart"></i></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <p>Accesorio Deporte</p>
-                <h4 class="card-product__title">
-                  <a href="single-product.html">Smartwatch</a>
-                </h4>
-                <p class="card-product__price">16,99€</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">
-                <img class="card-img" src="img/product/product2.jpg" alt="" />
-                <ul class="card-product__imgOverlay">
-                  <li>
-                    <button><i class="ti-search"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-shopping-cart"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-heart"></i></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <p>Belleza y Salud</p>
-                <h4 class="card-product__title">
-                  <a href="single-product.html">Colonia After Shave</a>
-                </h4>
-                <p class="card-product__price">4,15€</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">
-                <img class="card-img" src="img/product/product3.jpg" alt="" />
-                <ul class="card-product__imgOverlay">
-                  <li>
-                    <button><i class="ti-search"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-shopping-cart"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-heart"></i></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <p>Bricolage</p>
-                <h4 class="card-product__title">
-                  <a href="single-product.html">Pegamento Extrafuerte</a>
-                </h4>
-                <p class="card-product__price">2,45€</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">
-                <img class="card-img" src="img/product/product4.jpg" alt="" />
-                <ul class="card-product__imgOverlay">
-                  <li>
-                    <button><i class="ti-search"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-shopping-cart"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-heart"></i></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <p>Alimentación</p>
-                <h4 class="card-product__title">
-                  <a href="single-product.html">Galletas Nocilla</a>
-                </h4>
-                <p class="card-product__price">2,99€</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">
-                <img class="card-img" src="img/product/product5.jpg" alt="" />
-                <ul class="card-product__imgOverlay">
-                  <li>
-                    <button><i class="ti-search"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-shopping-cart"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-heart"></i></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <p>Belleza y Salud</p>
-                <h4 class="card-product__title">
-                  <a href="single-product.html">Gel Higienizante De Manos</a>
-                </h4>
-                <p class="card-product__price">2,18€</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">
-                <img class="card-img" src="img/product/product6.jpg" alt="" />
-                <ul class="card-product__imgOverlay">
-                  <li>
-                    <button><i class="ti-search"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-shopping-cart"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-heart"></i></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <p>Hogar</p>
-                <h4 class="card-product__title">
-                  <a href="single-product.html">Servilletas de Papel</a>
-                </h4>
-                <p class="card-product__price">0,65€</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">
-                <img class="card-img" src="img/product/product7.jpg" alt="" />
-                <ul class="card-product__imgOverlay">
-                  <li>
-                    <button><i class="ti-search"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-shopping-cart"></i></button>
-                  </li>
-                  <li>
-                    <button><i class="ti-heart"></i></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <p>Hogar</p>
-                <h4 class="card-product__title">
-                  <a href="single-product.html">Spray Cleaner</a>
-                </h4>
-                <p class="card-product__price">0,99€</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">
-                <img class="card-img" src="img/product/product8.jpg" alt=""/>
-                <ul class="card-product__imgOverlay">
-                  <li><button><i class="ti-search"></i></button></li>
-                  <li><button><i class="ti-shopping-cart"></i></button></li>
-                  <li><button><i class="ti-heart"></i></button></li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <p>Jardinería</p>
-                <h4 class="card-product__title">
-                  <a href="single-product.html">Maceta de riego automático</a>
-                </h4>
-                <p class="card-product__price">3,60€</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card text-center card-product">
-              <div class="card-product__img">                               
-              </div>                
-            </div>
-          </div>
+        <div class="row" id="cards">
         </div>
       </div>
     </section>
@@ -404,197 +175,6 @@
           <h2>Los más <span class="section-intro__style">Vendidos</span></h2>
         </div>
         <div class="owl-carousel owl-theme" id="bestSellerCarousel">
-          <div class="card text-center card-product">
-            <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product1.jpg" alt="" />
-              <ul class="card-product__imgOverlay">
-                <li>
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-shopping-cart"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-heart"></i></button>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <p>Accesorio Deporte</p>
-              <h4 class="card-product__title">
-                <a href="single-product.html">Smartwatch</a>
-              </h4>
-              <p class="card-product__price">16,99 €</p>
-            </div>
-          </div>
-
-          <div class="card text-center card-product">
-            <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product2.jpg" alt="" />
-              <ul class="card-product__imgOverlay">
-                <li>
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-shopping-cart"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-heart"></i></button>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <p>Belleza y Salud</p>
-              <h4 class="card-product__title">
-                <a href="single-product.html"> Colonia After Shave</a>
-              </h4>
-              <p class="card-product__price">4,15€</p>
-            </div>
-          </div>
-
-          <div class="card text-center card-product">
-            <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product3.jpg" alt="" />
-              <ul class="card-product__imgOverlay">
-                <li>
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-shopping-cart"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-heart"></i></button>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <p>Bricolage</p>
-              <h4 class="card-product__title">
-                <a href="single-product.html">Pegamento Extrafuerte</a>
-              </h4>
-              <p class="card-product__price">2,45€</p>
-            </div>
-          </div>
-
-          <div class="card text-center card-product">
-            <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product4.jpg" alt="" />
-              <ul class="card-product__imgOverlay">
-                <li>
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-shopping-cart"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-heart"></i></button>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <p>Alimentación</p>
-              <h4 class="card-product__title">
-                <a href="single-product.html">Galletas Nocilla</a>
-              </h4>
-              <p class="card-product__price">2,99€</p>
-            </div>
-          </div>
-
-          <div class="card text-center card-product">
-            <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product1.jpg" alt="" />
-              <ul class="card-product__imgOverlay">
-                <li>
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-shopping-cart"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-heart"></i></button>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <p>Accesorio Deporte</p>
-              <h4 class="card-product__title">
-                <a href="single-product.html">Smartwatch</a>
-              </h4>
-              <p class="card-product__price">16,99€</p>
-            </div>
-          </div>
-
-          <div class="card text-center card-product">
-            <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product2.jpg" alt="" />
-              <ul class="card-product__imgOverlay">
-                <li>
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-shopping-cart"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-heart"></i></button>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <p>Belleza y Salud</p>
-              <h4 class="card-product__title">
-                <a href="single-product.html">Colonia After Shave</a>
-              </h4>
-              <p class="card-product__price">4,15€</p>
-            </div>
-          </div>
-
-          <div class="card text-center card-product">
-            <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product3.jpg" alt="" />
-              <ul class="card-product__imgOverlay">
-                <li>
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-shopping-cart"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-heart"></i></button>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <p>Bricolage</p>
-              <h4 class="card-product__title">
-                <a href="single-product.html">Pegamento Extrafuerte</a>
-              </h4>
-              <p class="card-product__price">2,45€</p>
-            </div>
-          </div>
-
-          <div class="card text-center card-product">
-            <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product4.jpg" alt="" />
-              <ul class="card-product__imgOverlay">
-                <li>
-                  <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-shopping-cart"></i></button>
-                </li>
-                <li>
-                  <button><i class="ti-heart"></i></button>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <p>Alimentación</p>
-              <h4 class="card-product__title">
-                <a href="single-product.html">Galletas Nocilla</a>
-              </h4>
-              <p class="card-product__price">2,99€</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -625,8 +205,9 @@
                   <a href="single-blog.html">Crema catalana:Como hacer esta clásica receta?</a>
                 </h4>
                 <p>
-                09/03/2022 La crema catalana és el postre más típico y tradicional de Catalunya, sobretodo durante la festividad de Sant Josep.
-                Descubre el origen, los ingredientes y la preparación de esta clásica receta.
+                  09/03/2022 La crema catalana és el postre más típico y tradicional de Catalunya, sobretodo durante la
+                  festividad de Sant Josep.
+                  Descubre el origen, los ingredientes y la preparación de esta clásica receta.
                 </p>
                 <a class="card-blog__link" href="#">Seguir Leyendo <i class="ti-arrow-right"></i></a>
               </div>
@@ -648,9 +229,11 @@
                 <h4 class="card-blog__title">
                   <a href="single-blog.html">Propiedades y beneficios del kiwi</a>
                 </h4>
-                <p>07/03/2022 El kiwi es una de las frutas más inconfundibles por su sabor, forma,color y capacidad para ayudar a la salud digestiva.
-                  Pero esto no és todo. Revelaremos algunos d elos beneficios menos conocidos del Kiwi, para que te animes a incluirlo en tu dieta diaria.
-               
+                <p>07/03/2022 El kiwi es una de las frutas más inconfundibles por su sabor, forma,color y capacidad para
+                  ayudar a la salud digestiva.
+                  Pero esto no és todo. Revelaremos algunos d elos beneficios menos conocidos del Kiwi, para que te
+                  animes a incluirlo en tu dieta diaria.
+
                 </p>
                 <a class="card-blog__link" href="#">Seguir Leyendo <i class="ti-arrow-right"></i></a>
               </div>
@@ -674,7 +257,8 @@
                 </h4>
                 <p>
                   04/02/2022 La primera curiosidad es que se llaman frutos secos por que presentan
-                  menos de un 50% de agua en su composición.Descubriremos más sobre ellos y contradeciremos su mala fama revelando
+                  menos de un 50% de agua en su composición.Descubriremos más sobre ellos y contradeciremos su mala fama
+                  revelando
                   cuales son sus propiedades y beneficios.
                 </p>
                 <a class="card-blog__link" href="#">Seguir Leyendo <i class="ti-arrow-right"></i></a>
@@ -690,13 +274,11 @@
     <section class="subscribe-position">
       <div class="container">
         <div class="subscribe text-center">
-          <h3 class="subscribe__title">
-            Obtenga actualizaciones desde cualquier lugar
-          </h3>
+          <h4 class="subscribe__title">
+            No te pierdas ninguna oferta
+          </h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-            deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Id, deleniti.
+            Inscribete a nuestro newsletter para que estes al tanto de las últimas ofertas!
           </p>
           <div id="mc_embed_signup">
             <form target="_blank"
@@ -732,7 +314,7 @@
               <p>
                 Los mejores productos a los mejores precios, es nuestro lema y todo en solo 48 horas!
               </p>
-         
+
               <p></p>
             </div>
           </div>
@@ -743,7 +325,6 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Producto</a></li>
                 <li><a href="#">Marca</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
@@ -815,6 +396,58 @@
     </div>
   </footer>
   <!--================ End footer Area  =================-->
+  <template id="template-card">
+    <div class="col-md-6 col-lg-4">
+      <div class="card text-center card-product">
+        <div class="card-product__img">
+          <img class="card-img" src="img/product/product1.jpg" alt="" />
+          <ul class="card-product__imgOverlay">
+            <li>
+              <button class='remove'><i class="ti-trash"></i></button>
+            </li>
+            <li>
+              <button class='add'><i class="ti-shopping-cart"></i></button>
+            </li>
+            <li>
+              <button class='like'><i class="ti-heart"></i></button>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <p>Accesorio Deporte</p>
+          <h4 class="card-product__title">
+            <a href="#">Smartwatch</a>
+          </h4>
+          <p class="card-product__price">16,99</p>
+        </div>
+      </div>
+    </div>
+  </template>
+  <template id="template-card-2">
+    <div class="card text-center card-product">
+      <div class="card-product__img">
+        <img class="img-fluid" src="img/product/product1.jpg" alt="" />
+        <ul class="card-product__imgOverlay">
+          <li>
+            <button class='remove'><i class="ti-trash"></i></button>
+          </li>
+          <li>
+            <button class='add'><i class="ti-shopping-cart"></i></button>
+          </li>
+          <li>
+            <button class='like'><i class="ti-heart"></i></button>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <p>Accesorio Deporte</p>
+        <h4 class="card-product__title">
+          <a href="single-product.html">Smartwatch</a>
+        </h4>
+        <p class="card-product__price">16,99 €</p>
+      </div>
+    </div>
+  </template>
 
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
@@ -826,10 +459,9 @@
   <script src="js/main.js"></script>
   <script src="js/functions.js"></script>
   <script src="js/productos.js"></script>
-  <script src="js/testfunctions-sandra.js"></script>
-  <script src="js/testfunctions-dorian.js"></script>
-  <script src="/js/testfunctions-alma.js"></script>
-  <script src="./js/testfunctions-tania.js"></script>
+  <script src="js/controlador-index.js"></script>
+  <script src="js/notify.js"></script>
+  <script src="/js/cercador.js"></script>
 </body>
 
 </html>
