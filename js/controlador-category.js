@@ -1,19 +1,11 @@
+let url = new URL(window.location.href)
+DEV
+  ? (urlProduct = `${url.origin}/single-product.html?id=`)
+  : (urlProduct = `${url.href}/single-product.html?id=`)
 //Aqui va el código que enlazará las funciones con el DOM
 window.addEventListener('DOMContentLoaded', () => {
   printProductsInCategories(Productos)
   createSubTotal()
-  const allLinkProducts = document.querySelectorAll('.card-product__title a')
-
-  allLinkProducts.forEach((ele) => {
-    ele.addEventListener('click', (e) => {
-      e.preventDefault()
-      let id = e.target.getAttribute('data-id')
-      let url = new URL(window.location.href)
-      DEV
-        ? (window.location.href = `${url.origin}/single-product.html?id=${id}`)
-        : (window.location.href = `${url.href}/single-product.html?id=${id}`)
-    })
-  })
 
   const filters = document.querySelectorAll('#filter > .filter-list')
 
@@ -21,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
     ele.addEventListener('click', (e) => {
       e.preventDefault()
       let categoria = e.target.getAttribute('data-categoria')
+      const inputFilter = e.target.previousSibling
+
       if (categoria !== 'todos') {
         const arrayCategoria = Productos.filter((producto) => {
           return producto.categoria === categoria
@@ -29,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
       } else {
         printProductsInCategories(Productos)
       }
+      inputFilter.checked = true
     })
   })
 })
@@ -56,6 +51,9 @@ function printProductsInCategories(array) {
     templateCard.querySelector('.card-body > p').textContent = producto.titulo
     templateCard.querySelector('.card-product__title > a').textContent =
       producto.categoria
+    templateCard
+      .querySelector('.card-product__title > a')
+      .setAttribute('href', urlProduct + producto.id)
     templateCard.querySelector('.card-product__price').textContent =
       producto.precio
     const clone = templateCard.cloneNode(true)

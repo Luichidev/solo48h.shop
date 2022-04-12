@@ -1,32 +1,29 @@
-let count = 0
-const cartIcon = document.querySelector(
-  '.nav-item > button > .ti-shopping-cart'
-)
 const cartIconNumber = document.querySelector('.nav-shop__circle')
-const cardIcons = document.querySelector('#cards')
 
-//Click en el icono de carrito
-cartIconNumber.innerHTML = count
-cartIcon.addEventListener('click', () => {
+window.addEventListener('DOMContentLoaded', () => {
+  let count = 0
   let url = new URL(window.location.href)
-  DEV
-    ? (window.location.href = `${url.origin}/cart.html`)
-    : (window.location.href = `${url.href}/cart.html`)
-})
+  DEV ? (newUrl = `${url.origin}`) : (newUrl = `${url.href}`)
 
-try {
-  //Click en el icono de carrito de cada producto
-  cart = getLocal('data-cart')
-  count = updateNotify()
+  const cartIcon = document.querySelector('.iconCart')
+
+  //Click en el icono de carrito
   cartIconNumber.innerHTML = count
-  cards.addEventListener('click', (e) => {
-    handleClickProducts(e)
-  })
+  cartIcon.setAttribute('href', newUrl + '/cart.html')
+  try {
+    //Click en el icono de carrito de cada producto
+    cart = getLocal('data-cart')
+    count = updateNotify()
+    cartIconNumber.innerHTML = count
+    cards.addEventListener('click', (e) => {
+      handleClickProducts(e)
+    })
 
-  bestSellerCarousel.addEventListener('click', (e) => {
-    handleClickProducts(e)
-  })
-} catch (error) {}
+    bestSellerCarousel.addEventListener('click', (e) => {
+      handleClickProducts(e)
+    })
+  } catch (error) {}
+})
 
 function handleClickProducts(e) {
   const id = e.target.dataset.id

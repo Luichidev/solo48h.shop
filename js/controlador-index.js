@@ -1,29 +1,12 @@
+let url = new URL(window.location.href)
+DEV
+  ? (urlProduct = `${url.origin}/single-product.html?id=`)
+  : (urlProduct = `${url.href}/single-product.html?id=`)
+
 window.addEventListener('DOMContentLoaded', () => {
   printProductsInIndexTrend()
   printProductsInIndexPopularity()
-  const allLinkProducts = document.querySelectorAll('.card-product__title a')
-  const bannerProducts = document.querySelectorAll(
-    '.hero-carousel__slideOverlay'
-  )
-
-  allLinkProducts.forEach((ele) => {
-    handleClick(ele)
-  })
-  bannerProducts.forEach((ele) => {
-    handleClick(ele)
-  })
 })
-
-function handleClick(ele) {
-  ele.addEventListener('click', (e) => {
-    e.preventDefault()
-    let id = e.target.getAttribute('data-id')
-    let url = new URL(window.location.href)
-    DEV
-      ? (window.location.href = `${url.origin}/single-product.html?id=${id}`)
-      : (window.location.href = `${url.href}/single-product.html?id=${id}`)
-  })
-}
 
 // Pintar los 6 primeros productos en tendencia
 function printProductsInIndexTrend() {
@@ -49,6 +32,9 @@ function printProductsInIndexTrend() {
     templateCard.querySelector('.card-body > p').textContent = producto.titulo
     templateCard.querySelector('.card-product__title > a').textContent =
       producto.categoria
+    templateCard
+      .querySelector('.card-product__title > a')
+      .setAttribute('href', urlProduct + producto.id)
     templateCard.querySelector('.card-product__price').textContent =
       producto.precio
     const clone = templateCard.cloneNode(true)
@@ -81,6 +67,9 @@ function printProductsInIndexPopularity() {
     templateCard.querySelector('.card-body > p').textContent = producto.titulo
     templateCard.querySelector('.card-product__title > a').textContent =
       producto.categoria
+    templateCard
+      .querySelector('.card-product__title > a')
+      .setAttribute('href', urlProduct + producto.id)
     templateCard.querySelector('.card-product__price').textContent =
       producto.precio
     const clone = templateCard.cloneNode(true)
