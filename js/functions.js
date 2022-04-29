@@ -12,9 +12,18 @@ function calculateTotal() {
 //DESCRIPTION: Muestra por consola todos los productos.
 //AUTOR: Sandra Sarmiento
 function getAllProducts() {
-  Productos.forEach((product) => {
-    console.table(product)
-  })
+  // Productos.forEach((product) => {
+  //   console.table(product)
+  // })
+
+  // metodo 1.- promesas
+  const apiUrl = `http://localhost:3000/productos`
+  return fetch(apiUrl)
+    .then((res) => res.json())
+    .then((response) => {
+      Productos = response
+      return Productos
+    })
 }
 // Cada producto del carrito conta con un campo cantidad. la función generateCart() recibe el array cartList, generando el array cart.
 //generateCart()
@@ -120,14 +129,14 @@ function getProductsFromCategory(categoria) {
 //Prototype: function ProductsByPopularity()
 //Description: mUestra los productos populares.
 //Autor:Tania Guimerà
-function ProductsByPopularity() {
+function ProductsByPopularity(Productos) {
   Productos.sort((a, b) => a.popularity - b.popularity).reverse()
 }
 
 //PROTOTYPE: Void createSubTotal().
 //DESCRIPTION: rellena el array subtotal con las categorias que hay en los productos
 //Autor: Luis Arana
-function createSubTotal() {
+function createSubTotal(Productos) {
   const model = {
     value: 0,
     discount: 0,
@@ -213,8 +222,8 @@ function getLocal(key) {
 //Prototype: function ProductsByTrend()
 //Description: mUestra los productos en tendencia.
 //Autor:Sandra Sarmiento
-function ProductsByTrend() {
-  let aux=[]
+function ProductsByTrend(Productos) {
+  let aux = []
   Productos.forEach((product) => {
     if (product.tendencia) {
       aux.push(product)

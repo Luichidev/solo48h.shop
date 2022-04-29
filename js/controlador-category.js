@@ -1,9 +1,12 @@
 //Aqui va el código que enlazará las funciones con el DOM
 window.addEventListener('DOMContentLoaded', () => {
-  printProductsInCategories()
-  createSubTotal()
-  const allLinkProducts = document.querySelectorAll('.card-product__title a')
+  const prod = getAllProducts()
+  prod.then((res) => {
+    printProductsInCategories(res)
+    createSubTotal(res)
+  })
 
+  const allLinkProducts = document.querySelectorAll('.card-product__title a')
   allLinkProducts.forEach((ele) => {
     ele.addEventListener('click', (e) => {
       e.preventDefault()
@@ -15,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // Pintar los productos en la pagina de categorias
-function printProductsInCategories() {
+function printProductsInCategories(Productos) {
   const cards = document.getElementById('cards')
   const templateCard = document.getElementById('template-card').content
   const fragment = document.createDocumentFragment()
