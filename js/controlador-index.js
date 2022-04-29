@@ -1,6 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
-  printProductsInIndexTrend()
-  printProductsInIndexPopularity()
+  let pro = getAllProducts()
+
+  pro
+  .then(res => {
+    printProductsInIndexTrend(res)
+    printProductsInIndexPopularity(res)
+  })
+
   const allLinkProducts = document.querySelectorAll('.card-product__title a')
   const bannerProducts = document.querySelectorAll(
     '.hero-carousel__slideOverlay'
@@ -24,12 +30,12 @@ function handleClick(ele) {
 }
 
 // Pintar los 6 primeros productos en tendencia
-function printProductsInIndexTrend() {
+function printProductsInIndexTrend(Productos) {
   const cards = document.getElementById('cards')
   const templateCard = document.getElementById('template-card').content
   const fragment = document.createDocumentFragment()
   // ProductsByPopularity()
-  let aux = ProductsByTrend()
+  let aux = ProductsByTrend(Productos)
 
   aux.forEach((producto) => {
     templateCard.querySelector('.card-img').setAttribute('src', producto.url)
@@ -56,11 +62,11 @@ function printProductsInIndexTrend() {
 }
 
 // Pintar los productos más populares (popularity), los 6 más vendidos
-function printProductsInIndexPopularity() {
+function printProductsInIndexPopularity(Productos) {
   const cards = document.getElementById('bestSellerCarousel')
   const templateCard = document.getElementById('template-card-2').content
   const fragment = document.createDocumentFragment()
-  ProductsByPopularity()
+  ProductsByPopularity(Productos)
 
   for (let index = 0; index < 6; index++) {
     const producto = Productos[index]

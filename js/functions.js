@@ -12,9 +12,20 @@ function calculateTotal() {
 //DESCRIPTION: Muestra por consola todos los productos.
 //AUTOR: Sandra Sarmiento
 function getAllProducts() {
-  Productos.forEach((product) => {
-    console.table(product)
+
+  // Productos.forEach((product) => {
+  //   console.table(product)
+  // })
+
+  const apiurl = "http://localhost:3000/products"
+
+  return fetch(apiurl)
+  .then(res => res.json())
+  .then(response =>{ 
+    let res = response
+    return res
   })
+
 }
 // Cada producto del carrito conta con un campo cantidad. la función generateCart() recibe el array cartList, generando el array cart.
 //generateCart()
@@ -120,7 +131,7 @@ function getProductsFromCategory(categoria) {
 //Prototype: function ProductsByPopularity()
 //Description: mUestra los productos populares.
 //Autor:Tania Guimerà
-function ProductsByPopularity() {
+function ProductsByPopularity(Productos) {
   Productos.sort((a, b) => a.popularity - b.popularity).reverse()
 }
 
@@ -213,7 +224,7 @@ function getLocal(key) {
 //Prototype: function ProductsByTrend()
 //Description: mUestra los productos en tendencia.
 //Autor:Sandra Sarmiento
-function ProductsByTrend() {
+function ProductsByTrend(Productos) {
   let aux = []
   Productos.forEach((product) => {
     if (product.tendencia) {
